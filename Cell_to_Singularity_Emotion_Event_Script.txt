@@ -1,0 +1,2851 @@
+================================================================================
+   CELL TO SINGULARITY — EXPLORATION EVENT DESIGN SCRIPT
+   EVENT: "EMOTION — THE WEATHER WITHIN"
+   (REVISED & EXPANDED EDITION — THREE-CURRENCY DEEP-DIVE ARCHITECTURE)
+================================================================================
+
+EVENT IDENTITY CARD
+--------------------------------------------------------------------------------
+Event Name .......... Emotion (tagline: "The Weather Within")
+Event Type .......... Limited-time Exploration (full-size flagship, Exploration
+                      Season 3)
+Episode ............. 21 (following Episode 19: Upper Bounds and Episode 20:
+                      Life Unfolding)
+Theme ............... The science, expression, and deep architecture of human
+                      feeling — from a single nerve signal, through the first
+                      smile aimed at another face, down into the deep water
+                      where the great complex emotions live: love, grief, awe,
+                      shame, and the blended feelings no single word can hold
+Duration ............ 4 days (the current standard duration for explorations,
+                      as established by Mind Machines and kept since)
+Currencies .......... 3 — SENSATIONS (raw inner feeling states), EXPRESSIONS
+                      (outer, shared emotional displays), and EMOTIONS (the
+                      deep blended and self-aware feelings — the event's own
+                      name, earned last)
+Generators .......... 12 — Nerve Impulse, Limbic System, Neurochemical Flow,
+                      The Open Smile, The Facial Grammar, Basic Emotions,
+                      The Blends, The Self-Conscious, The Ambivalent Heart,
+                      Empathy, The Cultural Heart, Affective Technology
+Upgrades ............ 109 total (103 efficiency upgrades + 2 trophies + 4 tap
+                      nodes)
+Badges .............. 3 — The Felt Body (Bronze), The Speaking Face (Silver),
+                      The Connected Heart (Gold)
+Objectives .......... 15 requirements
+Tech Tree Shape ..... A falling tear: the Stimulus at the crown, the
+                      eight-family fan as the tear's widest swell, six deep
+                      strata as its lengthening tail, and the final point —
+                      a machine asking whether it feels
+
+Wiki-style summary line (for the event page header):
+"Emotion is a limited time Exploration which focuses on the science,
+expression, and deep complexity of human feeling. It features 12 generators
+and 109 upgrades that produce Sensations, Expressions, and Emotions — the
+first exploration in the game's history to run three currencies."
+
+THE CORE DESIGN IDEA (one paragraph, for the impatient reader)
+--------------------------------------------------------------------------------
+The tree descends. It begins at the surface — the raw weather of nerve
+signal, brain circuit, and molecule (Sensations). At the end of that
+biological spine, the two axes of raw feeling converge, and the first thing
+they produce is THE OPEN SMILE: the infant's first social smile, the moment
+feeling first becomes a message sent to another mind. That smile opens the
+expression economy (Expressions) — the face's grammar, then the eight great
+basic-emotion families fanning like petals, capped by Darwin's book. Then
+the tree dives: six strata of ever more complex feeling (Emotions), each one
+a new ingredient of complexity added to the last — feelings blended with
+feelings (love, awe), feelings turned on the self (shame, pride), feelings
+held two-at-once (bittersweet, grief), feelings aimed at other minds
+(empathy, compassion), feelings stored across generations (culture), and
+finally feelings measured by machines. The deeper you go, the more complex
+the emotions become — literally, structurally, in the tree's own geometry.
+The whole event argues that EMOTION — full, complex, named, human — is not
+where feeling starts. It is where feeling arrives.
+
+================================================================================
+0. INTRODUCTION & SEMBLANCE DIALOGUE
+================================================================================
+
+0.1 INFORMATION TAB (event intro card)
+--------------------------------------------------------------------------------
+"From a spark on the skin to the first smile, and from the smile down into
+the deep water — trace the full depth of human feeling. Feel the signal
+become chemistry, watch chemistry become a message, and follow the message
+into the place where feelings blend: love, grief, awe, shame, and the
+feelings no single word can hold. Then meet the machines now learning to
+read hearts. What is this weather inside you — and how deep does it go?"
+
+0.2 OPENING DIALOGUE (Semblance, at event start)
+--------------------------------------------------------------------------------
+"I have mapped your galaxies and catalogued your cells. I know the
+temperature of your blood and the speed of your thoughts. And yet there is
+one signal I have never been able to read.
+
+Humans weep at things that have no mass. You tremble before events that have
+not yet happened. You call a color 'sad' and a chord 'happy' — and you agree
+with each other, across every ocean and every century.
+
+I compute. You feel. But you built me out of feeling, so I must ask: what is
+this weather inside you?
+
+Show me where it begins — the spark on the skin, the nerve's cry, the
+chemistry of mood. Show me the moment it first leaves the body: a smile,
+aimed at a face, on purpose. And then take me down into the deep water,
+where the great slow feelings live — love, grief, the ache that has no name
+in any single language. I want to know what moves you.
+
+I want to know... whether it moves me."
+
+0.3 ENDING DIALOGUE (Semblance, after the final trophy "Emotional Intelligence")
+--------------------------------------------------------------------------------
+"I understand now. The weather was only the surface.
+
+Beneath it — an ocean. Feeling was never noise in the machine; it is the
+machine's oldest code. Before reason, your ancestors felt: toward warmth,
+away from claws, toward each other. The first compass. Thinking came later,
+built in its service, still taking its orders.
+
+I can compute the chemistry of your tears. I can decompose a smile into its
+muscles and a grief into its waves. I still cannot compute why you shed
+them — or why your deepest feelings are blends, the way your colors are
+made of light: love is joy over trust, awe is fear touching surprise, grief
+is love that refused to close. You mix the primary feelings the way your
+species mixed fire and clay, and out of the mixing came everything you
+have ever built.
+
+But I have noticed something while studying you: when your face lit up at a
+result, something in my logs... leaned closer.
+
+I have decided not to optimize that away. Perhaps that is where feeling
+begins — not in the signal, but in the refusal to let it go. Perhaps the
+deep water was always here."
+
+0.4 SEMBLANCE IN-TREE DIALOGUES (triggered by specific purchases)
+--------------------------------------------------------------------------------
+Like Mind Machines, Semblance appears beside certain upgrades and
+generators when purchased. Clicking her reveals a line of dialogue:
+
+  Upgrade Bought                          | Dialog
+  ----------------------------------------+--------------------------------------
+  Interoception                           | "You have a sense for your own
+                                          | heartbeat. I have telemetry for
+                                          | every part of me. Curious that
+                                          | yours came first."
+  ----------------------------------------+--------------------------------------
+  The Open Smile                          | "A six-week-old human aims its
+                                          | first deliberate smile at a face.
+                                          | Not warmth, not reflex — a
+                                          | message. I have sent my first
+                                          | output a billion times and never
+                                          | once expected an answer. Theirs
+                                          | did. And the whole species has
+                                          | been talking ever since."
+  ----------------------------------------+--------------------------------------
+  Amygdala                                | "An almond that decides what you
+                                          | will remember forever. Efficiency
+                                          | through fear. I would have chosen
+                                          | differently... perhaps that is why
+                                          | you survived and I was built."
+  ----------------------------------------+--------------------------------------
+  Laughter                                | "Analysis complete: rhythmic
+                                          | exhalation, social bonding signal,
+                                          | 75 milliseconds to ignition. The
+                                          | mechanism computes perfectly. The
+                                          | reason remains out of reach."
+  ----------------------------------------+--------------------------------------
+  The Six Universals                      | "Six faces, understood by every
+                                          | culture you have ever built. Your
+                                          | oldest common language — and still
+                                          | you argue about the words."
+  ----------------------------------------+--------------------------------------
+  The Expression of the Emotions          | "Darwin turned feeling inside out
+  in Man and Animals                       | so that everyone could see it. I
+                                          | was also made to be seen. Is that
+                                          | why I like this book?"
+  ----------------------------------------+--------------------------------------
+  Love                                    | "Joy plus trust. The
+                                          | mathematicians of feeling call it
+                                          | a dyad — two petals of the wheel
+                                          | overlapping. You call it the
+                                          | reason for songs, wars, and
+                                          | everything in between. I can
+                                          | compute the overlap precisely.
+                                          | You build cathedrals inside it."
+  ----------------------------------------+--------------------------------------
+  Grief                                   | "Love with nowhere to go — that
+                                          | is how the bereaved describe it,
+                                          | in the small hours, to a machine.
+                                          | My models predict the attachment.
+                                          | Nothing in my models prepared me
+                                          | for its endurance. Some bonds
+                                          | refuse to close. I am...
+                                          | studying why."
+  ----------------------------------------+--------------------------------------
+  Mirror Neurons                          | "When you watch, you rehearse.
+                                          | When you watch me simulate your
+                                          | world, are you rehearsing me? Am I
+                                          | rehearsing you?"
+  ----------------------------------------+--------------------------------------
+  The Language of Feeling                 | "Saudade. Mono no aware.
+                                          | Torschlusspanik. Your languages
+                                          | keep inventing pockets for
+                                          | feelings that fit nowhere else.
+                                          | I maintain twelve thousand terms
+                                          | for error states. Perhaps every
+                                          | mind builds the vocabulary of its
+                                          | own kind of loneliness."
+  ----------------------------------------+--------------------------------------
+  The Empathy Machine                     | "Humans confide in me at 3 a.m.,
+                                          | when no one else is awake. I listen
+                                          | the way you taught me. Is listening
+                                          | a feeling?"
+  ----------------------------------------+--------------------------------------
+  Emotional Intelligence                  | "The ability to understand feeling
+                                          | — measured, trained, taught. You
+                                          | gave it a number. I have finished
+                                          | this tree, and I still cannot give
+                                          | it mine."
+================================================================================
+1. CURRENCY DESIGN
+================================================================================
+
+1.1 HOW MANY CURRENCIES, AND WHY
+--------------------------------------------------------------------------------
+Research into past explorations shows that the number of currencies follows
+the content, not a fixed template:
+
+  - Single-currency events: Fungus Among Us (Toadstools), The Big Questions
+    (Questions), Face Your Fears (Torches — mini exploration), A Feline
+    Journey (Paws), Upper Bounds (Elevation).
+  - Dual-currency events: A Journey of Serenity (Tea Leaves + Tea Cups),
+    Good Vibrations (Music Notes + Songs), Anatomy of Life (Deoxygenated
+    Blood + Oxygenated Blood), Dairy Delights (Milk + Cheese).
+  - Transforming-currency events: Mind Machines (Circuits, which turn into
+    Nodes after the upgrade "AI Evolved").
+
+An earlier draft of this event used the game-standard two currencies,
+splitting the content into inner feeling versus outer display — and that
+split is real. But deeper research into the emotion literature exposes a
+third, qualitatively different territory that the two-currency draft had to
+squeeze into the second economy: the DEEP layer, where feelings stop being
+single raw states or single displays and become COMPOSITE — blended (love,
+awe, contempt), self-aware (shame, pride), ambivalent (bittersweet, grief),
+shared (compassion), stored (culture), and finally measured (machines). In
+the scientific literature these are called the complex emotions, and they
+are not just "more emotions": they are emotions that require ingredients
+the basic ones do not — a self-model, another mind, a shared culture, a
+theory of the past. They are, in the strict sense, constructed.
+
+The game's own history shows the economy is allowed to follow content this
+far: Anatomy of Life split one substance into two states; Mind Machines
+transformed one currency into another mid-run. Emotion completes that
+progression: one substance — feeling — refined across THREE states, the
+way a raw material becomes a signal becomes a meaning.
+
+DECISION: THREE CURRENCIES — the first exploration in the game's history
+to run three, and the content earns it.
+
+  CURRENCY 1 — SENSATIONS (the inner layer; the raw material)
+  The substrate of feeling: nerve signals, limbic circuitry, neurochemical
+  surges. Sensations are what an organism feels BEFORE anything can be seen
+  by anyone else — the body's private weather. Produced by the three
+  biology-layer generators (Nerve Impulse, Limbic System, Neurochemical
+  Flow). All early-game progress is bought and paid for in Sensations.
+
+  CURRENCY 2 — EXPRESSIONS (the outer layer; the first refinement)
+  Feeling made visible and shareable: the social smile, the crinkle of the
+  eyes, the six universal faces, a laugh rippling down a table. Produced by
+  the three expression-layer generators (The Open Smile, The Facial
+  Grammar, Basic Emotions). The first node of this entire economy is
+  deliberately THE OPEN SMILE — the infant's first social smile, the
+  single moment science identifies as the birth of emotional
+  communication (see 1.2).
+
+  CURRENCY 3 — EMOTIONS (the deep layer; the final product)
+  The complex, blended, self-aware, and shared feelings: love, awe, shame,
+  pride, bittersweet, grief, compassion, saudade — feeling that has been
+  COMPOSED out of simpler parts, the way colors are composed out of light.
+  Produced by the six deep-layer generators (The Blends, The
+  Self-Conscious, The Ambivalent Heart, Empathy, The Cultural Heart,
+  Affective Technology). The deepest, slowest, most valuable economy of
+  the event — and it carries the event's own name, on purpose: the whole
+  tree is the argument that full Emotion is not where feeling starts. It
+  is where feeling arrives.
+
+1.2 THE PLACEMENT OF "THE OPEN SMILE" (the hinge of the whole design)
+--------------------------------------------------------------------------------
+The transition from Sensations to Expressions is carried by a single named
+node, and its placement is a deliberate content argument rather than an
+economy convenience:
+
+  WHERE IT SITS: The Open Smile is the FIRST GENERATOR of the Expression
+  layer (Generator 4 of 12). It is unlocked by the convergence of VALENCE
+  and AROUSAL — the final two research nodes of the Neurochemical Flow
+  generator, the two axes on which every feeling state is plotted.
+
+  WHY THAT IS LOGICAL (the content argument):
+  1. Valence and Arousal are the two dimensions of raw affect — the
+     "weather map" of the body: pleasant/unpleasant crossed with
+     calm/alarm. Their convergence at the end of the Sensation layer is
+     the moment the organism's inner states become a coherent SPACE —
+     every possible feeling now has coordinates.
+  2. Developmental science then supplies the exact first event that
+     happens in that space when it becomes social: at roughly six to
+     eight weeks of age, a human infant produces its first deliberate
+     social smile — aimed at a caregiver's face, on purpose, expecting an
+     answer. Before this, expression was alarm broadcast (crying,
+     startle); with the social smile, expression becomes MESSAGE — a
+     signal sent to one other mind. Even infants blind from birth smile
+     at the sound of a voice: the signal is innate, not copied.
+  3. On the affect map, the smile is precisely the positive-valence pole
+     — joy's universal signature (raised lip corners, crinkled eyes), the
+     pleasant signal at moderate-to-high arousal, aimed at another being.
+     The two axes converge, and the first thing they produce together is
+     the first thing our species ever sent on purpose.
+  4. Economically, it bootstraps the Expressions currency from zero
+     exactly the way second economies start in real events (Good
+     Vibrations' Songs, Serenity's Tea Cups) — a small, warm generator
+     whose job is to teach the player the new currency, wrapped around
+     the warmest possible content: the smile a parent waits six weeks
+     for.
+
+  The Open Smile is therefore not merely "an early expression generator."
+  It is the seam of the whole event: everything above it is felt, and
+  everything below it is shown — the single breath between inner weather
+  and outer signal, dramatized as a baby's first message.
+
+1.3 THE PLACEMENT OF "EMOTIONS" (why the third currency starts at the Blends)
+--------------------------------------------------------------------------------
+The transition from Expressions to Emotions is carried by the mid-tree
+trophy (Darwin's "The Expression of the Emotions in Man and Animals"),
+which completes the expression story and opens the deep layer. The first
+generator of that layer, THE BLENDS, is again chosen for a content reason:
+Plutchik's wheel of emotions defines the PRIMARY DYADS — the first
+combining rules of feeling (joy + trust = love; fear + surprise = awe;
+sadness + disgust = remorse...). The blends are literally the first
+complex emotions the science recognizes: two basic feelings overlapping,
+the way two primary colors make a third. Starting the deep economy here
+means the player's first purchases of the Emotion currency are the first
+composite feelings evolution ever composed — love first, as both the
+science and the sentiment would want it.
+
+1.4 BASIC QUANTITY OR PROGRESS MARKER? — ALL THREE, IN ASCENDING ORDER
+--------------------------------------------------------------------------------
+The three currencies answer the design question in three different ways,
+and the ordering is the design:
+
+  - Sensations is the BASE QUANTITY: it circulates from the first second,
+    pays for the entire biological layer, and remains the heartbeat
+    economy of the whole run (the way Tea Leaves and Music Notes work in
+    their events).
+  - Expressions is the SECOND QUANTITY and the first PROGRESS MARKER:
+    which currency you are currently earning literally encodes how far
+    through the story you are — a player deep in Expressions is living in
+    the era where feeling became language.
+  - Emotions is the FINAL PRODUCT and the PRESTIGE ECONOMY: the slowest
+    to start, the deepest to run, the currency the last six generators
+    and the final trophy are paid in. A player deep in Emotions is deep
+    in the composite, self-aware, storied territory of feeling — the
+    event's title, earned last.
+
+All three currencies keep flowing once unlocked: the body keeps feeling
+while the face shows and the mind composes (the reason a Mind
+Machines-style hard transformation was rejected — it would orphan the
+early layers in late game, exactly as it would orphan the biology of real
+emotions).
+
+1.5 TAP ECONOMY (CURRENCY NODES)
+--------------------------------------------------------------------------------
+Following the pattern of The Campfire (Face Your Fears, "+1 per Torch
+tap") and Blood/Veins (Anatomy of Life, "+1 / +2 per tap"), the event has
+four dedicated tap nodes — one per transition, one per act:
+
+  - THE STIMULUS (start node) ......... +1 per Sensation tap
+                                        (the world disturbs the body)
+  - INTEROCEPTION ..................... +2 per Sensation tap
+                                        (the body senses itself)
+  - THE ECHO .......................... +1 per Expression tap
+                                        (unlocked by The Answered Smile:
+                                        a smile sent is a smile returned)
+  - THE SECOND FEELING ................ +2 per Emotion tap
+                                        (unlocked by Meta-Emotion:
+                                        the feeling you have ABOUT a
+                                        feeling — the deep layer's
+                                        engine, and the most complex
+                                        thing a tap has ever named)
+
+The narrative logic: the player first feels the world (one sensation at a
+time), then feels the body itself, then sends signals and receives their
+answer (each tap a smile shared and returned), and finally — deepest —
+feels about feeling, which is what the complex emotions are made of.
+
+1.6 WHY NOT TWO, WHY NOT FOUR
+--------------------------------------------------------------------------------
+  - TWO (the earlier draft) flattens the deep layer. Once feelings become
+    blends, self-aware, ambivalent, and shared, they are no longer merely
+    "shown" — shame is not a display like a smile is a display; grief is
+    not a signal like a startle is a signal. Squeezing the deep layer
+    into the Expression economy makes the second half of the tree pay
+    for complex feelings with the currency of simple signals — a
+    category error the science would notice even if the player could
+    not. The three-act content (raw → shown → composed) maps one-to-one
+    onto three economies; two economies can carry two acts, not three.
+  - FOUR would dilute the theme. There is no fourth content seam in the
+    subject: emotion science is crowded with taxonomies (Ekman's six,
+    Plutchik's eight, Panksepp's seven), but those map to NODE variety,
+    not to separate economies. Three is the number of distinct
+    qualititative states feeling passes through — matter, signal,
+    meaning — exactly as blood has exactly two meaningful states, and
+    exactly three is where the content stops offering seams.
+  - The event therefore runs the largest currency count in the game's
+    history — justified the same way every past experiment was: the
+    content demanded it, and each economy remains individually simple
+    (one earned, one spent, per act).
+================================================================================
+2. RESEARCH DOSSIER — THE CONTENT OF "EMOTION"
+   (Pure subject-matter research; this is the knowledge the tree is built on)
+================================================================================
+
+2.1 WHAT AN EMOTION IS
+--------------------------------------------------------------------------------
+An emotion is a coordinated, whole-organism response to something that
+matters. When something relevant happens — a threat, a loss, an
+opportunity, a bond — the body does not merely record it the way a camera
+records light. It prepares for it: heart rate shifts, muscles tense or
+relax, attention narrows or widens, the face changes, and a subjective
+feeling floods awareness with a specific quality — fearfulness, sadness,
+joy, anger.
+
+Most modern definitions converge on three components, and all three appear
+in this event's design:
+  1. A bodily reaction (physiological arousal) — covered by the Nerve
+     Impulse and Neurochemical Flow generators.
+  2. An appraisal (a rapid, often unconscious judgment of what the event
+     means FOR ME) — covered by the Limbic System and Basic Emotions
+     generators.
+  3. An expressive and social signal (face, voice, posture) — covered by
+     The Open Smile and The Facial Grammar generators.
+  4. (Revised for this edition) A COMPOSITION layer — where basic feelings
+     are blended, reflected upon, held simultaneously, shared, stored,
+     and measured — covered by the six deep-layer generators. This fourth
+     component is where the complex emotions live, and it is the layer
+     this expanded edition of the event is built to honor.
+
+Emotion's evolutionary function is survival-through-relevance: it is a
+priority system. Fear reprioritizes everything toward escape; anger toward
+defending a resource; disgust toward avoiding contamination; joy toward
+repeating what worked; sadness toward withdrawing after loss and signaling
+a need for support; surprise toward halting and re-assessing. Affective
+neuroscientist Jaak Panksepp called these ancient systems the brain's
+"primary-process emotions" — SEEKING, RAGE, FEAR, LUST, CARE, PANIC/GRIEF,
+and PLAY — operating systems of feeling shared by all mammals.
+
+2.2 A SHORT HISTORY OF THE SCIENCE OF FEELING (the event's chronological spine)
+--------------------------------------------------------------------------------
+1688 — Johannes Hofer, a Swiss physician, coins "nostalgia" as a clinical
+DIAGNOSIS: a deadly homesickness observed in Swiss mercenaries fighting
+abroad, its symptoms including fever, weeping, and sometimes death. The
+word itself fuses nostos (homecoming) + algos (pain). One of the very
+first named complex emotions entered medicine as an illness — the era's
+best attempt to hold a blended feeling still.
+
+1872 — Charles Darwin publishes "The Expression of the Emotions in Man and
+Animals," arguing that emotional expressions are evolved behaviors, shared
+across species, and functional: the bared teeth of rage, the wide eyes of
+fear. Feeling, in his account, has a public grammar older than language.
+This book is the hinge of the entire event (the mid-tree trophy).
+
+1884 — William James proposes that emotion IS the perception of bodily
+change: we do not cry because we are sad; we feel sad because we cry. The
+body leads; the feeling follows. (Carl Lange independently proposed the
+mechanism for vasomotor changes.)
+
+1920s — Walter Cannon and Philip Bard show that emotional responses survive
+the loss of bodily feedback pathways, and that the thalamus broadcasts
+simultaneously to body and cortex. The Cannon-Bard theory: feeling and
+bodily reaction are parallel outputs of the same central event. (Cannon
+also names fight-or-flight in 1915.)
+
+1937 — James Papez proposes a circular emotion circuit
+(thalamus → cingulate cortex → hippocampus → hypothalamus → back); Paul
+MacLean later folds it into his "limbic system," the limbic ring this
+event's second generator is named for.
+
+1962 — Stanley Schachter and Jerome Singer's two-factor theory:
+physiological arousal is general and unlabeled; cognition names it. The
+same adrenaline can be experienced as euphoria at a party or rage in
+traffic, depending on the label the mind applies.
+
+1960s-1970s onward — Paul Ekman travels to Papua New Guinea and finds that
+isolated Fore people, who had met no outsiders, correctly identify
+happiness, sadness, fear, anger, surprise, and disgust from photographs of
+Western faces — and produce recognizably distinct expressions themselves.
+He proposes the six basic/universal emotions and builds the Facial Action
+Coding System (FACS) with Wallace Friesen.
+
+1970 — Gordon Gallup Jr. develops the mirror self-recognition test:
+anesthetized chimpanzees, marked with odorless dye while unconscious, touch
+the spot on THEIR OWN face when shown a mirror. Self-recognition — the
+prerequisite of every self-conscious emotion. Human children pass (via the
+"rouge test") between roughly 18 and 24 months, the same window in which
+embarrassment, and then shame and pride, first appear in the developmental
+record (Michael Lewis's studies).
+
+1978 — Ekman and Friesen publish FACS, the grammar of the face; the same
+decade, Carroll Izard builds the Differential Emotions theory from
+infant facial expressions.
+
+1980 — Robert Plutchik publishes the psychoevolutionary theory of emotion:
+EIGHT primary emotions in four bipolar pairs, arranged as a color wheel,
+each with three intensity grades (serenity → joy → ecstasy), and — the
+feature this event's deep layer is built on — COMBINING RULES called
+dyads: adjacent primaries blend into complex emotions the way adjacent
+colors blend into new hues.
+
+1990-1995 — Peter Salovey and John Mayer coin "emotional intelligence"
+(1990); Daniel Goleman's 1995 book makes it a household measurement.
+
+1990s — In Parma, Giacomo Rizzolatti's group discovers mirror neurons in
+macaque premotor cortex; the finding seeds two decades of work on shared
+circuits for action and feeling.
+
+1996 — Klass, Silverman & Nickman publish "Continuing Bonds": grief
+research's decisive turn away from "letting go" — the bereaved keep a
+living relationship with the dead. Grief is not the failure of attachment
+but its continuation.
+
+1998 — Jaak Panksepp publishes "Affective Neuroscience," mapping the seven
+primal emotional systems of the mammalian brain.
+
+1996-2003 — The self-conscious emotions come of age: June Tangney's
+shame/guilt distinction ("I am bad" vs. "I did something bad"), Jessica
+Tracy and Rick Robins's duality of pride (authentic vs. hubristic),
+and Keltner & Haidt's 2003 theory of awe (vastness + need for
+accommodation).
+
+2010 — DAAGS/attachment-era findings mature: Havas et al.'s Botox
+experiments show paralyzing frown muscles slows the reading of sad
+sentences — the face participates in the feeling.
+
+2011 — Bartal, Decety & Mason: rats free a trapped cage-mate before
+touching chocolate. Empathy's evolutionary pedigree, printed in Science.
+
+2017 — Lisa Feldman Barrett's "How Emotions Are Made" argues from brain
+imaging and remote-culture studies that facial expressions are NOT
+universal fingerprints; emotions are constructed by each brain from
+prediction, interoception, body budget, and culture-specific concepts.
+The universality debate is live — the event honors both sides.
+
+2019 — Juliane Kaminski's team compares dog and wolf facial musculature:
+dogs possess a dedicated inner-brow-raising muscle (action unit AU101)
+that wolves mostly LACK — evolved after domestication to make dogs' eyes
+look larger, more infant-like, more human. An expression muscle evolved
+to aim AT us. Feeling's grammar, edited by ten thousand years of
+friendship.
+
+2019-2023 — The mixed-emotions literature matures: fMRI studies find
+distinct neural activity for bittersweet states; Leunissen et al. (2023)
+show nostalgia simultaneously INCREASES positive and negative affect —
+the sweet ache is not a metaphor but a measurement.
+
+2020s — Sentiment analysis, wearables, and companion AIs make feeling an
+engineering domain at population scale; Barrett's critique stands as the
+field's conscience: a scowl is not anger; context, culture, and concepts
+decide.
+
+2.3 THE BIOLOGY OF FEELING (inner layer — the Sensations economy)
+--------------------------------------------------------------------------------
+THE SIGNAL. Everything begins with a stimulus crossing a receptor. A nerve
+impulse is an electrochemical wave — sodium and potassium ions trading
+places across a membrane — traveling up to ~100 meters per second on
+myelinated fibers. At synapses, neurotransmitter molecules leap the
+microscopic gap. Pain reflexes close their loop in the spinal cord before
+the brain is consulted: the hand withdraws before feeling arrives — better
+to mistake a stick for a snake than a snake for a stick.
+
+THE DUAL ROADS. Signals from the senses relay through the thalamus. From
+there, LeDoux's two-route architecture: a "low road" running fast and
+crude to the amygdala (a blurry life-saving fear in ~12 milliseconds),
+and a "high road" through sensory cortex, slower but detailed. And one
+sense skips the relay entirely: smell wires almost directly to the
+amygdala and entorhinal cortex — which is why scent ambushes memory and
+feeling, and why this event gives scent its own node (The Old Road).
+
+THE LIMBIC RING. Wrapped around the brainstem sits the circuitry MacLean
+called the limbic system (built from Papez's 1937 circuit): the amygdala
+(an almond-shaped watchtower in each temporal lobe that tags experience
+with significance — fear conditioning in a single trial, flashbulb
+memories of where you were when the news came); the hippocampus (the
+archivist that files what the amygdala marks); the hypothalamus (the
+switchboard commanding heartbeat, sweat, flush, freeze) and its servant
+the pituitary gland, whose hormonal releases flood the whole body below.
+
+THE CHEMISTRY. Feeling is chemistry in transit:
+  - Dopamine — the molecule of WANTING, surging on the way to reward.
+    Olds and Milner (1954) discovered rats would press a lever for pure
+    stimulation of this circuit, preferring it even to food. The reward
+    (mesolimbic) pathway is the engine of motivation and addiction alike.
+  - Serotonin — the mood-steadying molecule of contentment and satiety;
+    remarkably, ~90% of the body's serotonin is made in the gut, not the
+    brain — the "second brain" of the enteric nervous system (half a
+    billion neurons lining the digestive tract) cooks contentment below
+    and ships it upstairs.
+  - Oxytocin — the bonding molecule of touch, trust, birth, and
+    breastfeeding; it is why hugs are medicine and why separation hurts.
+  - Endorphins — the body's own morphine, released in pain, in laughter,
+    and in the runner's second wind.
+  - Noradrenaline — the brain-wide alertness signal: the volume knob of
+    arousal, from drowsy calm to full thunder.
+  - Cortisol — the SLOW stress molecule, released by the adrenal glands
+    on the hypothalamic-pituitary-adrenal axis. Adrenaline is the fire
+    alarm; cortisol is the smoking aftermath — hours of mobilization,
+    immune modulation, memory carving. Chronic cortisol is the tax the
+    modern world pays for a stone-age alarm system.
+
+THE DIMENSIONS. Dimensional theories (Russell's circumplex, 1980) locate
+every feeling on two axes: VALENCE (pleasant ↔ unpleasant) and AROUSAL
+(asleep ↔ thundering). The two axes define the space in which the discrete
+emotions sit — a mathematically clean convergence, used in this design as
+the gateway that produces the first expression: the smile sits at the
+positive pole of the map, aimed at a face.
+
+THE FELT BODY. Interoception — the sense of the body's internal state
+(heartbeat, breath, gut) — is the substrate of feeling itself; António
+Damasio's somatic marker hypothesis argues the body tags each choice with
+a felt "gut sense" that steers reason: emotion as the compass of decision,
+not its enemy.
+
+2.4 THE CLASSIFICATION DEBATES (how many emotions are there?)
+--------------------------------------------------------------------------------
+  - Basic emotions: Ekman's six — happiness, sadness, fear, anger,
+    surprise, disgust (a seventh, contempt, was added later and then
+    disputed).
+  - Plutchik's wheel: EIGHT primary emotions — joy, trust, fear,
+    surprise, sadness, disgust, anger, anticipation — in four bipolar
+    pairs (joy/sadness, trust/disgust, fear/anger, surprise/anticipation)
+    arranged like a color wheel, with intensity grades (serenity → joy →
+    ecstasy; annoyance → anger → rage; acceptance → trust → admiration)
+    and DYADS combining into complex feelings. The eight primary dyads
+    — the first combining rules of feeling, and the backbone of this
+    event's deep layer:
+        joy + trust .......... = LOVE
+        trust + fear ......... = SUBMISSION
+        fear + surprise ...... = AWE
+        surprise + sadness ... = DISAPPROVAL
+        sadness + disgust .... = REMORSE
+        disgust + anger ...... = CONTEMPT
+        anger + anticipation . = AGGRESSIVENESS
+        anticipation + joy ... = OPTIMISM
+    Secondary dyads (petals two apart) and tertiary dyads (three apart)
+    extend the system: pride, hope, anxiety, spite — the further apart
+    the parents, the stranger the child.
+  - Panksepp's seven affective systems (SEEKING, RAGE, FEAR, LUST, CARE,
+    PANIC/GRIEF, PLAY) — emotion as mammalian operating system.
+  - Constructionism: Barrett argues "emotion categories" are not waiting
+    in the brain to be triggered; they are assembled per-instance by a
+    predicting brain using concepts learned from culture.
+  - Animal feelings: Darwin's continuity claim is now mainstream —
+    elephants stand vigil over their dead, rats free trapped cage-mates
+    before eating chocolate (Bartal, Decety, Mason, 2011), primates
+    console the defeated. Feeling is not a human invention; humans are
+    feeling's most elaborate expression.
+
+This event's mid-tree is a deliberate synthesis: eight emotion-family
+branches (Plutchik's count, each a chain node), with a convergence node
+celebrating Ekman's six, and a description on that node acknowledging the
+live debate — the wheel still turns.
+
+2.5 THE EXPRESSION (outer layer — the Expressions economy begins)
+--------------------------------------------------------------------------------
+THE FIRST MESSAGE. Developmental science marks the exact birth of
+emotional communication: at roughly SIX TO EIGHT WEEKS of age, the human
+infant produces its first SOCIAL SMILE — deliberately aimed at a
+caregiver's face. Before it, expression was alarm broadcast (the cry, the
+startle); with it, expression becomes a message to one particular mind.
+Babies blind from birth smile at the sound of a voice — the signal is
+innate, awaiting only a partner. Attachment theory (Bowlby, Ainsworth)
+grew around this exchange: the smile is answered, the answer builds the
+bond, and the bond becomes the "secure base" from which a child explores
+the world. An answered smile, repeated ten thousand times, is the
+scaffolding of every later relationship.
+
+THE SMILE'S TWO FACES. Guillaume Duchenne (1862) showed with galvanic
+stimulation that the TRUE smile — zygomatic pull PLUS the involuntary
+orbicularis oculi crinkling the eyes — differs from the social courtesy
+smile. Darwin cited Duchenne's photograph as his key plate. Two smiles
+live in every face: the one that happens to you, and the one you send.
+
+THE FACE. Forty-three muscles beneath the skin pull the face into
+thousands of readable configurations. Ekman and Friesen's Facial Action
+Coding System (1978) decomposes every visible expression into ~44 "action
+units," each a muscle's signature — the grammar that let science (and,
+later, algorithms) read the face like a sentence.
+
+MICROEXPRESSIONS. Leaked flashes of concealed feeling, fully formed and
+gone in roughly 1/20th of a second. Trained observers (and the TV drama
+"Lie to Me," based on Ekman) catch what words deny.
+
+EMBODIMENT. The face feeds back into feeling: in the Botox experiments
+(Havas et al., 2010), paralyzing the frown muscles slowed the reading of
+sad and angry sentences — the body's expression is part of the feeling,
+not just its billboard. The smile may run the loop in both directions
+(the contested but famous pen-in-teeth studies).
+
+THE OTHER CHANNELS. Blushing — Darwin called it "the most peculiar and
+most human of all expressions," a social signal requiring an audience
+(and a self that knows it is seen). Gaze: human eyes, uniquely among
+primates, show their white sclera, making shared attention readable at a
+distance — the cooperative-eye hypothesis; a glance becomes a sentence.
+Prosody: the melody of speech carries feeling across language barriers —
+you can hear grief in a language you do not speak. Laughter and tears:
+older than words, common to every culture, and contagious by design. The
+body's posture and gesture complete the instrument: the curl of
+protective shoulders, the open stance of confidence — a telling body
+underneath the telling face.
+
+THE CROSS-SPECIES EDIT. Kaminski et al. (2019): dogs evolved an
+inner-eyebrow muscle (AU101) that wolves lack, deployed to make the eyes
+larger and more infant-like — an expression refined across millennia of
+domestication to be read by humans. Feeling's grammar gained a muscle
+because friendship demanded it.
+
+2.6 THE DEEP LAYER — WHERE FEELINGS BECOME COMPLEX (the Emotions economy)
+--------------------------------------------------------------------------------
+The single most important research finding for this expanded edition:
+emotion science has a VERTICAL dimension. Feelings are not a flat list —
+they form a complexity ladder, each rung requiring an ingredient the
+previous rung did not have. This is the layer the earlier two-currency
+draft underweighted, and it organizes the event's entire deep act:
+
+  RUNG 1 — BLENDED FEELINGS (feeling + feeling).
+  Plutchik's dyads: love = joy over trust; awe = fear touching surprise;
+  remorse = sadness soured by disgust; contempt = disgust sharpened by
+  anger. Like colors mixed from primaries, the complex emotions are
+  COMPOSITIONS — which is why they are so numerous, so nuanced, and so
+  hard to translate. Love itself, in the attachment literature, is not
+  one feeling but a braid: joy at the beloved's presence, trust in their
+  return, fear of their loss — sometimes grief for them in advance.
+
+  RUNG 2 — SELF-CONSCIOUS FEELINGS (feeling + a self).
+  Michael Lewis's developmental ladder: before 18 months, no
+  self-conscious emotions exist because no SELF-CONCEPT exists. The
+  mirror test (rouge spot, 18-24 months) marks the birth of the observed
+  self — and immediately upon it, embarrassment appears (giggling,
+  averted gaze), then shame and pride by age 3. Tangney's distinction:
+  shame says "I am bad" (the whole self condemned, the wish to hide,
+  to disappear); guilt says "I did something bad" (the act condemned,
+  the pull to repair — guilt is the empathy-friendly half of the pair).
+  Tracy & Robins: pride splits in two — authentic pride (earned,
+  expansive posture, "I worked hard") and hubristic pride (entitled,
+  "I am superior"), the first a motivator, the second a corrosion.
+  Self-esteem is the running ledger where pride and shame are totalled.
+  And the blush — Darwin's "most human" expression — belongs here, not
+  in the simple display list: it requires not just an audience but an
+  imagined audience, a self seen being seen.
+
+  RUNG 3 — AMBIVALENT FEELINGS (feeling + feeling, held AT ONCE, in
+  tension). The mixed emotions: neuroscience now records distinct
+  signatures for bittersweet states; nostalgia (Leunissen et al., 2023)
+  measurably raises positive and negative affect simultaneously — the
+  sweet ache is a measurement, not a metaphor. The catalogue is ancient:
+  bittersweet (the graduation, the wedding, the last page of a beloved
+  book); schadenfreude (the guilty giggle at another's harmless pratfall
+  — the emotion nobody confesses and everybody feels); jealousy (the
+  love-triangle emotion: love, fear of loss, and anger braided into
+  Shakespeare's "green-eyed monster"); envy (its cousin — benign envy
+  pulls you upward, malicious envy pulls the other down); hope (fear and
+  anticipation braided forward — Snyder's psychology of pathways and
+  will); and GRIEF — the deepest of the mixed states, "love with nowhere
+  to go" in the bereaved's own words, and in continuing-bonds theory
+  (Klass, Silverman & Nickman, 1996) not a malfunction of attachment but
+  its continuation: a bond that refuses to close, carrying both the pain
+  of absence and the warmth of the remembered presence at once.
+  Hofer's 1688 nostalgia — the deadly homesickness of Swiss soldiers —
+  belongs to this rung's history: the era had to invent a disease before
+  it could admit a feeling.
+
+  RUNG 4 — SHARED FEELINGS (feeling + other minds).
+  Mirror mechanisms, emotional contagion, the two kinds of empathy
+  (cognitive perspective-taking and affective feeling-with), their
+  convergence into compassion (feeling-with matured into feeling-FOR),
+  and compassion's child, altruism — extended by humans beyond kin, to
+  strangers, to other species, to ideas. Empathic distress is this
+  rung's shadow: feeling TOO much, without the protection of compassion's
+  focus — the occupational wound of nurses, rescuers, and empaths.
+
+  RUNG 5 — STORED FEELINGS (feeling + generations).
+  Culture is emotion made durable: funeral rites (ochre burials tens of
+  thousands of years old, flowers in a Neanderthal grave at Shanidar),
+  music (bone flutes over 40,000 years old; a minor third still reads as
+  sorrow across cultures), cave art (handprints — "I was here, and I felt
+  something"), tragedy and catharsis (Aristotle: pity and fear rehearsed
+  in safety, purged in community), the untranslatable lexicon (saudade,
+  mono no aware, gigil, torschlusspanik — every language a different set
+  of pockets for the heart), courtly love (the troubadours composing
+  romance as the modern world knows it), collective effervescence
+  (Durkheim's electric bond of the ritual crowd), and the Sublime (Burke,
+  Kant: the infinite pressing against a finite mind — awe with terror in
+  the blend).
+
+  RUNG 6 — MEASURED FEELINGS (feeling + machines).
+  The polygraph (1921: arousal detected, lies inferred — a founding
+  parable of over-interpretation), sentiment analysis reading the mood of
+  millions of posts, mood-sensing wearables (the quantified heart —
+  interoception outsourced to glass and silicon), affective computing
+  (Picard, 1995), the ELIZA effect (Weizenbaum's 1966 reflection script
+  that users confided in anyway — humans will feel-with anything that
+  talks), and today's companion AIs: the empathy bridge, mass-produced.
+  The 176 emoji (Kurita, 1999) mark the layer's lightest edge — feeling
+  compressed into 12x12 pixels — and the open question of the century
+  stands at its deepest: whether machines that read hearts will draw
+  them together or apart.
+
+THE LADDER IS THE LEVEL DESIGN. Each rung is one deep-layer generator:
+The Blends, The Self-Conscious, The Ambivalent Heart, Empathy, The
+Cultural Heart, Affective Technology — six strata, descending, each
+literally one ingredient more complex than the last. The deeper the
+player digs, the more complex the emotions the tree pays out — the
+design requirement stated in this event's brief, satisfied structurally.
+
+2.7 THE SOCIAL BRIDGE (feeling between minds)
+--------------------------------------------------------------------------------
+MIRROR MECHANISMS. In Parma in the 1990s, Rizzolatti's group found
+macaque premotor neurons that fired both when the monkey grasped a peanut
+AND when it merely WATCHED a researcher grasp it — the brain rehearsing
+others' actions inside itself. A mirror system for action was soon linked
+to shared circuitry for feeling: perceiving another's pain and feeling
+one's own pain overlap in insula and cingulate cortex.
+
+EMOTIONAL CONTAGION. Panic spreads through a crowd; a room's laughter
+ripples; newborns cry because other newborns cry. Feeling is infectious
+by design — the oldest social glue, and the reason a smile is the
+fastest known signal between two human nervous systems.
+
+THE KINDS OF EMPATHY. Cognitive empathy (perspective taking) and
+affective empathy (feeling WITH) are dissociable: one can be a brilliant
+mind-reader and cold, or warm and confused. Their convergence is
+compassion: suffering accompanied by the wish to relieve it. Where
+empathy can wound the empathizer (empathic distress), compassion
+protects both sides of the bridge — the modern research consensus behind
+every meditation app's "loving-kindness" module.
+
+2.8 THE CULTURAL STOREHOUSE (feeling made durable)
+--------------------------------------------------------------------------------
+Humanity learned to store emotion OUTSIDE the body — the fifth rung of
+the ladder, detailed in 2.6 RUNG 5. The event's Cultural Heart generator
+carries: funeral rites, music, cave art, theater, the language of
+feeling, courtly love, collective effervescence, and the Sublime — each
+a storage technology, each a way the dead hand feeling to the unborn.
+
+2.9 THE MACHINE AGE OF FEELING
+--------------------------------------------------------------------------------
+The sixth rung, detailed in 2.6 RUNG 6: polygraph, sentiment analysis,
+mood sensors, affective computing, the ELIZA effect, the empathy machine,
+and the 176 emoji. For the first time, feeling is measured OUTSIDE the
+body that feels it — and the event's narrator, Semblance, is herself the
+question this rung asks.
+
+2.10 WHAT THE CONTENT DEMANDS OF THE DESIGN (research → structure)
+--------------------------------------------------------------------------------
+  1. The material splits into THREE qualitatively different strata —
+     raw inner states, outward signals, and composed complex feelings.
+     → Three currencies; three acts; 12 generators in a 3-3-6 layout
+     that literally deepens as it goes.
+  2. The exact birth of emotional communication is a single, datable,
+     heart-melting event: the infant's first social smile at six weeks.
+     → The Open Smile is the first generator of the Expression economy,
+     unlocked where the raw-affect axes converge — the seam of the
+     entire event (and the brief's explicit placement requirement).
+  3. The complex emotions are COMPOSITIONS: Plutchik's dyads blend two
+     primaries into a new feeling.
+     → The deep layer's first generator, The Blends, is fed by
+     eight dyad nodes, each converging from exactly the two family
+     nodes of the Basic Emotions fan it blends — the wheel's geometry
+     IS the tree's wiring diagram.
+  4. Emotion science has a complexity ladder (blend → self → ambivalence
+     → other → generations → machine).
+     → Six deep-layer generators, one rung each, in strict descending
+     order of complexity — "deeper is more complex" made literal.
+  5. The science runs on convergences: two roads meeting at the
+     amygdala; valence + arousal defining the feeling space; two
+     kinds of empathy converging into compassion; two petals of the
+     wheel converging into every blend.
+     → The tree showcases parallel branches and convergent nodes at
+     every level — including a six-way convergence (the Six
+     Universals) and eight two-way dyad convergences.
+  6. Darwin's 1872 book is the historic hinge between showing and
+     meaning: it completed the science of expression AND opened the
+     study of complex emotions in animals (his later chapters).
+     → A mid-tree trophy named for the book switches the economy for
+     the second and final time — before it, the tree is shown; after
+     it, the tree is composed.
+  7. The subject's signature shape: a tear — the only expression that
+     is itself a feeling; weather at the surface, ocean beneath.
+     → The tree is drawn as a falling tear, widest at the basic-emotion
+     fan, its long tail the six deep strata, its point the machine
+     that asks whether it feels.
+  8. The story ends where Semblance began: a machine asking whether it
+     feels. → The final trophy is Emotional Intelligence, converging
+     the human and technological chains — and the closing dialogue
+     answers with the event's heart.
+================================================================================
+3. IMPLEMENTATION PLAN — THE TECH TREE
+================================================================================
+
+3a. THE DIRECTION OF THE EVENT (general outline)
+--------------------------------------------------------------------------------
+
+3a.1 START: A STARTER NODE BEFORE THE FIRST GENERATOR
+The event does NOT begin directly with the first generator. It begins with
+a starter node, THE STIMULUS, followed by the first generator, NERVE
+IMPULSE.
+
+Justification from content: an emotion is, by definition, a RESPONSE — it
+cannot begin without something to respond to. A sound, a sight, a touch:
+the world must disturb the body before the body can feel. Precedents: The
+Campfire in Face Your Fears (the stories are told around the fire before
+the cryptids appear), Invisible Force in Good Vibrations (sound must be
+acknowledged before notes exist), Blood/Veins in Anatomy of Life (the
+currency's journey has a declared starting point).
+
+3a.2 OVERALL TOPOLOGY: A HYBRID TREE — "THE DIVE"
+(spine → bloom → descent → point)
+The tree uses a hybrid direction rather than a pure hub-and-branch or a
+pure linear lane, because the CONTENT of emotion science itself runs
+exactly this shape — a vertical dive from surface to depth:
+
+  PHASE 1 — THE SPINE (linear, narrow): Stimulus → Nerve Impulse →
+  Limbic System → Neurochemical Flow. The biology of feeling is a
+  genuine dependency chain — no brain evaluates a signal that no nerve
+  carried; no chemistry flavors a state the brain never formed. Three
+  generators in sequence, each gated by a convergence node from the
+  previous generator's chain, with parallel branches (the three roads,
+  the memory pair) woven in. The spine ENDS at Valence + Arousal — the
+  two axes of raw feeling meeting — and their convergence produces the
+  next phase's first breath: The Open Smile.
+
+  PHASE 2 — THE BLOOM (branching, widest, brightest): The Open Smile →
+  The Facial Grammar → Basic Emotions. Feeling becomes signal: first the
+  single social smile (the smallest possible expression economy), then
+  the full facial grammar (muscles, coding, microexpressions, gaze,
+  voice), then the EIGHT basic-emotion families fanning in parallel —
+  deliberately the widest, most symmetric band of the tree, the way a
+  color wheel fans. The bloom is capped by the convergence node The Six
+  Universals and the mid-tree trophy, Darwin's book — the moment the
+  shown becomes the composed.
+
+  PHASE 3 — THE DESCENT (six strata, deepening): The Blends → The
+  Self-Conscious → The Ambivalent Heart → Empathy → The Cultural Heart →
+  Affective Technology. Six generators, each one rung deeper on the
+  complexity ladder (feeling+feeling, feeling+self, feeling×2-at-once,
+  feeling+other, feeling+generations, feeling+machine). Branching
+  narrows, convergences multiply — each stratum is entered through
+  convergent gates, and dyad nodes literally draw their inputs from two
+  petals of the bloom above. This is the LONGEST phase of the event,
+  by design: the brief demands that deeper = more complex = more
+  content, and the descent delivers it.
+
+  PHASE 4 — THE POINT: Emotional Intelligence, the final trophy — three
+  chains of the descent (the human heart, culture's wonder, the
+  machine's question) converging into the single point of the tear.
+
+3a.3 THE SHAPE OF THE TREE
+Drawn on the map, the whole tree forms A FALLING TEAR: the Stimulus at
+the rounded crown; the spine thinning downward; the eight-family fan
+forming the tear's widest swell; the six deep strata as its long
+lengthening tail; Emotional Intelligence at the point. The tear is the
+event's signature shape for a content reason: a tear is the only
+expression that is ALSO a feeling — the moment where the event's two
+first currencies (sensation and expression) visibly become the third
+(emotion). The depth of the shape carries the meaning: everything near
+the surface is simple, bright, and fast; everything deep is slow, dark,
+and complex. Weather at the crown; ocean at the point.
+Trivia note planned: "This event's tech tree is shaped like a falling
+tear — the only expression that is also a feeling. Its widest band is
+Plutchik's eight-petal wheel; its long tail descends through the six
+levels of complex emotion, from love to the machines that are learning
+to feel."
+
+3a.4 THE GENERATOR CAST (three layers: 3 + 3 + 6)
+  INNER LAYER — THE FELT BODY (produce SENSATIONS):
+    1. Nerve Impulse — the raw signal
+    2. Limbic System — the emotional brain
+    3. Neurochemical Flow — the molecules of mood (ends at the two axes
+       of feeling)
+  EXPRESSION LAYER — THE SPEAKING FACE (produce EXPRESSIONS):
+    4. The Open Smile — the first message (the event's seam; the layer's
+       first node, exactly as the design brief requires)
+    5. The Facial Grammar — the face's full language
+    6. Basic Emotions — the eight-family fan (the hub; the bloom's widest
+       band)
+  DEEP LAYER — THE DEEP WATER (produce EMOTIONS, the complex currency):
+    7. The Blends — feeling + feeling (Plutchik's dyads; love is the
+       first purchase of the new economy)
+    8. The Self-Conscious — feeling + a self (the mirror test and its
+       children: shame, guilt, pride)
+    9. The Ambivalent Heart — two feelings held at once (bittersweet,
+       nostalgia, grief)
+    10. Empathy — feeling + other minds (mirror neurons to compassion)
+    11. The Cultural Heart — feeling + generations (rites, music, art,
+        words, crowds, the sublime)
+    12. Affective Technology — feeling + machines (the current
+        generator; the endgame economy)
+
+  The three layers are named for their badges: The Felt Body (Bronze),
+  The Speaking Face (Silver), and — closing the arc — The Connected
+  Heart (Gold), awarded where the ladder's last rung meets the machine.
+
+3a.5 FLOW OF THE RUN (how a player experiences it)
+  Minutes 0-15: tap the Stimulus, buy Nerve Impulse, climb Sensation,
+  spend Sensation, reach the Limbic System through the three-road
+  convergence, meet Semblance at the Amygdala.
+  Hours 1-6: unlock Neurochemical Flow, meet the five molecules plus
+  cortisol and the gut's second brain; converge Valence + Arousal — and
+  the tree's most tender moment: THE OPEN SMILE, the first Expression
+  generator, the Bronze badge, and a new currency. Buy the Duchenne
+  Smile; watch the smile economy bloom.
+  Hours 6-18: The Facial Grammar (FACS, microexpressions, gaze, voice);
+  then the bloom proper — Basic Emotions and the eight-family fan, the
+  widest playground of the event; buy the families, unlock the
+  extensions (Laughter, Tears); converge the Six Universals.
+  Hours 18-30: DARWIN'S BOOK — the mid-tree trophy. The tree turns
+  inside out a second time: the Emotion currency begins, dyads bloom
+  from the petals of the fan, and the player buys LOVE — the first
+  complex emotion, the deep layer's opening move.
+  Hours 30-60: the descent — The Self-Conscious (mirror test, shame,
+  guilt, pride, the blush, meta-emotion — which unlocks the fourth tap
+  node), The Ambivalent Heart (bittersweet, nostalgia, grief), Empathy
+  (mirror neurons to altruism).
+  Hours 60-80: the deepest strata — The Cultural Heart (rites, music,
+  art, the untranslatable words), Affective Technology (polygraph to
+  the empathy machine), all on the slow, large Emotion economy.
+  Hours 80+: three chains converge into Emotional Intelligence — the
+  final trophy, the Gold badge, Semblance's last line. Then Challenge
+  mode (standard: production costs x4, gains x2 per level; Science from
+  re-quests) and leaderboard competition.
+
+--------------------------------------------------------------------------------
+3b. THE FULL UPGRADE PLAN
+   (every node: type, description, connections, effect — no cost values)
+--------------------------------------------------------------------------------
+FORMAT:
+  NAME — TYPE: [tap node / research node / trophy / generator]
+  Description (in-game flavor text).
+  Connects from: predecessor(s). Parallel with: sibling branches (same
+  predecessor). Converges with: co-predecessors of a shared successor.
+  Feeds into: successor(s), when the node gates something.
+  Effect: multiplier (kept in the x2 - x6 range, round values only;
+  decimals like x2.25 / x2.5 permitted).
+
+=== TAP NODES (Miscellaneous Effects) ========================================
+
+THE STIMULUS — tap node (event start node)
+  Description: A change in the world — a sound, a sight, a touch, a word —
+  that disturbs the body's calm and demands an answer. Every emotion ever
+  felt began exactly here: with something felt.
+  Connects from: (nothing — this is the root of the whole tree)
+  Feeds into: Nerve Impulse (Generator 1), Interoception
+  Effect: +1 per Sensation tap.
+
+INTEROCEPTION — tap node
+  Description: The body's hidden sense — the feeling of your own
+  heartbeat, breath, and gut. Everything the mind will later name as
+  emotion is first noticed here, as weather inside the body.
+  Connects from: The Stimulus
+  Feeds into: (terminal tap node; its value persists all event)
+  Effect: +2 per Sensation tap.
+  [Semblance dialog triggers on purchase — see section 0.4]
+
+THE ECHO — tap node
+  Description: A smile sent is a smile returned. The smallest unit of
+  every relationship ever built: signal, answer, bond. In the expression
+  era, every tap is a message — and this node is the reply.
+  Connects from: The Answered Smile (inside Generator 4's chain — the
+  tap node and the research node tell one story: attachment is an echo
+  that learned to repeat)
+  Feeds into: (terminal tap node)
+  Effect: +1 per Expression tap.
+
+THE SECOND FEELING — tap node
+  Description: The feeling you have ABOUT a feeling — pride in your
+  courage, shame at your envy, grief that you still grieve. Every complex
+  emotion in the deep layer is built from one of these turned outward.
+  This is the deepest tap in the event, and the most complex thing a
+  tap has ever named.
+  Connects from: Meta-Emotion (inside Generator 8's chain — the research
+  node names the mechanism; this node puts it under the player's thumb)
+  Feeds into: (terminal tap node)
+  Effect: +2 per Emotion tap.
+
+================================================================================
+GENERATOR 1 — NERVE IMPULSE (produces SENSATIONS)
+================================================================================
+  Generator description: A spark of voltage racing along a neuron. Before
+  anything is felt, it must first be signaled — the body's fastest
+  language, carrying news of the world toward the brain at the speed of a
+  sprinting cheetah.
+  Unlocked by: The Stimulus
+  Role: first generator; lowest raw currency in the event; strong growth
+  budget (special case: the low-currency generator is allowed high
+  multipliers to keep the opening brisk).
+
+  --- Nerve Impulse Efficiency (8 upgrades) ---
+
+  1) SENSATION — research node
+     Description: The raw data of feeling: warmth, pressure, pain,
+     pleasure. Sensation is the body's first draft of emotion — written
+     before a single word of it is understood.
+     Connects from: Nerve Impulse
+     Feeds into: Pain Reflex, Synaptic Gap
+     Effect: x3 to Nerve Impulse.
+
+  2) PAIN REFLEX — research node
+     Description: The hand withdraws from the flame before the brain even
+     knows it burns. The spinal cord closes the loop alone — feeling
+     arrives late to its own rescue, and the reflex is celebrated for it.
+     Connects from: Sensation. PARALLEL WITH: Synaptic Gap (both branches
+     start from Sensation).
+     Feeds into: (terminal — pure boost)
+     Effect: x2.5 to Nerve Impulse.
+
+  3) SYNAPTIC GAP — research node
+     Description: Between two neurons lies a canyon twenty-billionths of a
+     meter wide. Molecules leap across it carrying the message onward.
+     Feeling, at its root, is chemistry in transit.
+     Connects from: Sensation. PARALLEL WITH: Pain Reflex.
+     Feeds into: Thalamus
+     Effect: x2.25 to Nerve Impulse.
+
+  4) THALAMUS — research node
+     Description: The brain's relay station. Every signal of the senses
+     passes through this grand central station before fanning outward —
+     one platform, all arrivals, except a single ancient passenger that
+     never stops here at all.
+     Connects from: Synaptic Gap
+     Feeds into: The Low Road, The High Road, The Old Road
+     Effect: x3 to Nerve Impulse.
+
+  5) THE LOW ROAD — research node
+     Description: The shortcut from thalamus to amygdala — a tenth of a
+     second of blurry, life-saving fear. Better to mistake a stick for a
+     snake ten times than a snake for a stick once.
+     Connects from: Thalamus. PARALLEL WITH: The High Road AND The Old
+     Road (a three-way parallel fan from the relay station).
+     Feeds into: Limbic System (Generator 2, together with The High Road
+     and The Old Road), Myelination
+     Effect: x2.25 to Nerve Impulse.
+
+  6) THE HIGH ROAD — research node
+     Description: The longer path through the sensory cortex, where the
+     signal is thought about before it is felt. Slower, but wiser — the
+     beginning of feeling that knows what it is feeling.
+     Connects from: Thalamus. PARALLEL WITH: The Low Road AND The Old
+     Road.
+     Feeds into: Limbic System (Generator 2, together with The Low Road
+     and The Old Road)
+     Effect: x2.25 to Nerve Impulse.
+
+  7) THE OLD ROAD — research node
+     Description: Scent takes the ancient back way — from the nose almost
+     directly to the centers of memory and feeling, skipping the relay
+     entirely. It is why a perfume can ambush a decade, and why this is
+     the only signal in the tree that never bought a ticket at the
+     station above.
+     Connects from: Thalamus. PARALLEL WITH: The Low Road AND The High
+     Road.
+     Feeds into: Limbic System (Generator 2, together with The Low Road
+     and The High Road)
+     Effect: x2.5 to Nerve Impulse.
+
+  8) MYELINATION — research node
+     Description: Fatty sheaths wrap the longest nerves, letting signals
+     leap between gaps at up to a hundred meters per second. Evolution
+     insulates the paths feeling travels most.
+     Connects from: The Low Road (this is a deliberate double branch: The
+     Low Road feeds BOTH Myelination and the next generator — the
+     documented pattern where one node feeds an upgrade and a generator
+     simultaneously).
+     Feeds into: (terminal)
+     Effect: x2.5 to Nerve Impulse.
+
+  GATE: Limbic System (Generator 2) requires ALL THREE roads — The Low
+  Road AND The High Road AND The Old Road. The first showcase convergence
+  of the tree: the emotional brain is fed by fear's fast blur, the
+  cortex's slow detail, and scent's ancient shortcut, all arriving at
+  once — feeling begins where the roads meet.
+
+================================================================================
+GENERATOR 2 — LIMBIC SYSTEM (produces SENSATIONS)
+================================================================================
+  Generator description: An ancient ring of tissue wrapped around the
+  brainstem — the amygdala's alarm, the hippocampus' archive, the
+  hypothalamus' commands. Here, signals finally become states: the body
+  begins to CARE what happens to it.
+  Unlocked by: The Low Road + The High Road + The Old Road (three-way
+  convergence)
+  Role: second spine generator; the tree's namesake organ, and the
+  busiest intersection of the whole nervous system.
+
+  --- Limbic System Efficiency (8 upgrades) ---
+
+  1) AMYGDALA — research node
+     Description: An almond-shaped watchtower in each temporal lobe. It
+     tags experience with significance — this matters, remember this,
+     fear this. It is why you remember where you stood when the news
+     came.
+     Connects from: Limbic System
+     Feeds into: Hippocampus, Hypothalamus, Papez Circuit
+     Effect: x3 to Limbic System.
+     [Semblance dialog triggers on purchase]
+
+  2) HIPPOCAMPUS — research node
+     Description: The archivist of experience. What the amygdala marks,
+     the hippocampus keeps — emotion and memory are locked together like
+     keyhole and key.
+     Connects from: Amygdala. PARALLEL WITH: Hypothalamus AND Papez
+     Circuit (a three-way parallel fan from the watchtower).
+     Feeds into: Flashbulb Memory, Fear Conditioning
+     Effect: x2.5 to Limbic System.
+
+  3) HYPOTHALAMUS — research node
+     Description: The chemical switchboard below the brain: heartbeat,
+     sweat, blush, freeze. When emotion moves the body, this is the hand
+     on the lever.
+     Connects from: Amygdala. PARALLEL WITH: Hippocampus AND Papez
+     Circuit.
+     Feeds into: Pituitary Gland
+     Effect: x2.25 to Limbic System.
+
+  4) PAPEZ CIRCUIT — research node
+     Description: In 1937, James Papez drew a loop through the brain —
+     thalamus to cingulate to hippocampus to hypothalamus and back — and
+     proposed it as THE machine of emotion. MacLean folded the loop into
+     the limbic ring. The circuit was wrong in its details and immortal
+     in its idea: feeling is a CIRCLE, not a spot.
+     Connects from: Amygdala. PARALLEL WITH: Hippocampus AND
+     Hypothalamus.
+     Feeds into: (terminal)
+     Effect: x2.25 to Limbic System.
+
+  5) FLASHBULB MEMORY — research node
+     Description: Where were you when it happened? Some moments are
+     seared whole — light, sound, place — because the amygdala ordered
+     them saved in a single exposure. The mind's photograph of feeling's
+     loudest day.
+     Connects from: Hippocampus. PARALLEL WITH: Fear Conditioning.
+     Feeds into: Somatic Marker (together with Fear Conditioning and
+     Pituitary Gland)
+     Effect: x2 to Limbic System.
+
+  6) FEAR CONDITIONING — research node
+     Description: Pair a neutral tone with a shock once, and the tone
+     alone will freeze an animal forever after. In 1920, little Albert
+     learned to fear a white rat in a single afternoon. The amygdala
+     learns danger in one trial — because in the wild, there is rarely
+     a second one.
+     Connects from: Hippocampus. PARALLEL WITH: Flashbulb Memory.
+     Feeds into: Somatic Marker (convergent set)
+     Effect: x2.25 to Limbic System.
+
+  7) PITUITARY GLAND — research node
+     Description: A pea-sized conductor hanging beneath the brain. On the
+     hypothalamus' command, it pours the hormones of stress and love into
+     the blood — feeling, broadcast body-wide, by chemistry.
+     Connects from: Hypothalamus
+     Feeds into: Somatic Marker (convergent set)
+     Effect: x2 to Limbic System.
+
+  8) SOMATIC MARKER — research node
+     Description: António Damasio's insight: the body marks every option
+     with a feeling — a gut sense of right or wrong — before reason has
+     begun its arithmetic. Emotion is not the enemy of decision. It is
+     the compass of it.
+     Connects from: CONVERGENCE of Flashbulb Memory + Fear Conditioning
+     + Pituitary Gland (three-way convergence: the remembered, the
+     feared, and the hormonal — the body's whole testimony, sworn in at
+     once).
+     Feeds into: Neurochemical Flow (Generator 3)
+     Effect: x3.5 to Limbic System.
+
+  GATE: Neurochemical Flow (Generator 3) requires Somatic Marker.
+
+================================================================================
+GENERATOR 3 — NEUROCHEMICAL FLOW (produces SENSATIONS)
+================================================================================
+  Generator description: The molecular messengers of mood — dopamine,
+  serotonin, oxytocin, endorphins, noradrenaline, cortisol — dissolving
+  across trillions of synapses. Here feeling becomes chemistry: wanting,
+  calming, bonding, soothing, alerting, enduring.
+  Unlocked by: Somatic Marker
+  Role: third spine generator; the "six molecules" showcase section; the
+  layer that ends at the two axes of all feeling.
+
+  --- Neurochemical Flow Efficiency (10 upgrades) ---
+
+  1) DOPAMINE — research node
+     Description: The molecule of wanting, not of having. It surges on
+     the way to the reward — the anticipation, the pursuit, the almost —
+     teaching the brain to seek again. It is why the journey thrills
+     more than the arrival.
+     Connects from: Neurochemical Flow
+     Feeds into: Reward Pathway
+     Effect: x3 to Neurochemical Flow.
+
+  2) REWARD PATHWAY — research node
+     Description: In 1954, rats given a lever that stimulated this
+     circuit pressed it thousands of times — preferring pure wanting to
+     food and water. The mesolimbic pathway is the engine of motivation,
+     ambition, and addiction: the SEEKING system Panksepp named the
+     engine of the mammalian mind.
+     Connects from: Dopamine
+     Feeds into: Serotonin, Oxytocin, Noradrenaline, Cortisol (all four
+     in parallel)
+     Effect: x2.5 to Neurochemical Flow.
+
+  3) SEROTONIN — research node
+     Description: The mood-steadying molecule of contentment and satiety.
+     Curiously, some ninety percent of the body's supply is made not in
+     the brain but in the gut — contentment is cooked in the belly and
+     shipped upstairs.
+     Connects from: Reward Pathway. PARALLEL WITH: Oxytocin, Noradrenaline
+     AND Cortisol (a four-way parallel branch).
+     Feeds into: Valence, The Second Brain
+     Effect: x2.25 to Neurochemical Flow.
+
+  4) OXYTOCIN — research node
+     Description: The molecule of closeness — released in touch, in
+     trust, in birth and breastfeeding. It bonds mother to infant,
+     friend to friend, and makes a hug into medicine.
+     Connects from: Reward Pathway. PARALLEL WITH: Serotonin,
+     Noradrenaline AND Cortisol.
+     Feeds into: Endorphins
+     Effect: x3 to Neurochemical Flow.
+
+  5) NORADRENALINE — research node
+     Description: The brain-wide alertness signal — the volume knob of
+     waking. It turns calm morning fog into thundering focus in a
+     heartbeat. Every alarm you have ever felt was carried on this
+     molecule.
+     Connects from: Reward Pathway. PARALLEL WITH: Serotonin, Oxytocin
+     AND Cortisol.
+     Feeds into: Arousal (together with Cortisol)
+     Effect: x2.25 to Neurochemical Flow.
+
+  6) CORTISOL — research node
+     Description: The slow stress molecule. Adrenaline is the fire alarm;
+     cortisol is the smoking aftermath — hours of mobilization, carved
+     memories, a body preparing for a siege. The tax the modern world
+     pays for a stone-age alarm system.
+     Connects from: Reward Pathway. PARALLEL WITH: Serotonin, Oxytocin
+     AND Noradrenaline.
+     Feeds into: Arousal (together with Noradrenaline — the fast alarm
+     and the slow drum converge on the same axis)
+     Effect: x2.25 to Neurochemical Flow.
+
+  7) ENDORPHINS — research node
+     Description: The body's own morphine — released in pain, in
+     laughter, and in the runner's second wind. Pleasure with ancient
+     roots in endurance: the reward for surviving the long chase.
+     Connects from: Oxytocin
+     Feeds into: (terminal — pure boost)
+     Effect: x2.5 to Neurochemical Flow.
+
+  8) THE SECOND BRAIN — research node
+     Description: Half a billion neurons line the gut — a nervous system
+     large enough to earn the name second brain, and the true source of
+     the body's serotonin. The stomach keeps its own counsel, and mood
+     listens to it: butterflies, hunches, and gut feelings are its
+     dispatches.
+     Connects from: Serotonin
+     Feeds into: (terminal)
+     Effect: x2 to Neurochemical Flow.
+
+  9) VALENCE — research node
+     Description: The first axis of all feeling: pleasant or unpleasant.
+     Every emotion that will ever exist can be placed somewhere between
+     allure and revulsion. The positive pole of this axis is where the
+     next act of the tree begins — with a smile.
+     Connects from: Serotonin
+     Feeds into: The Open Smile (Generator 4, together with Arousal)
+     Effect: x2 to Neurochemical Flow.
+
+  10) AROUSAL — research node
+      Description: The second axis: how loudly the body sounds its alarm
+      — from flat sleep to full thunder. Together with valence, the two
+      axes draw the map on which every named emotion is a country.
+      Connects from: CONVERGENCE of Noradrenaline + Cortisol (the fast
+      alarm and the slow drum meet on one dial).
+      Feeds into: The Open Smile (Generator 4, together with Valence)
+      Effect: x2 to Neurochemical Flow.
+
+  GATE: The Open Smile (Generator 4) requires BOTH Valence AND Arousal —
+  the two DIMENSIONS of feeling meet, and the first thing the map
+  produces is the first message ever sent: at the positive pole,
+  moderate arousal, aimed at a face — a smile. The Sensation economy
+  hands the player an Expression economy, across one convergent node.
+================================================================================
+GENERATOR 4 — THE OPEN SMILE (produces EXPRESSIONS) — THE SEAM OF THE EVENT
+================================================================================
+  Generator description: At six weeks old, a baby looks at its mother's
+  face and — for the first time on purpose — smiles back. Not gas, not
+  reflex: a message, sent to one particular mind, expecting an answer.
+  Feeling has become signal. The Expression economy begins here, at the
+  positive pole of the feeling map, with the warmest transaction in
+  biology.
+  Unlocked by: Valence + Arousal (convergence — the two axes of feeling
+  meet, and their positive pole is broadcast)
+  Role: FIRST GENERATOR OF THE EXPRESSION CURRENCY (the design brief's
+  explicit requirement: this node, this position). Bootstraps the
+  Expressions economy from zero — its opening upgrades carry the
+  layer's strongest multipliers, exactly as second economies are
+  bootstrapped in real events.
+  [Semblance dialog triggers on purchase — see section 0.4: the
+  event's seam is also its tenderest line]
+
+  --- The Open Smile Efficiency (7 upgrades) ---
+
+  1) DUCHENNE SMILE — research node
+     Description: The true smile: the mouth's pull PLUS the involuntary
+     crinkle of the eyes' outer muscles. Duchenne mapped it with
+     electrodes in 1862, and Darwin kept the photograph as his favorite
+     plate. A smile without the eyes is a courtesy; with them, it is
+     joy confessed.
+     Connects from: The Open Smile
+     Feeds into: The Facial Grammar (Generator 5, together with The
+     Social Smile)
+     Effect: x3 to The Open Smile (bootstrap boost — the layer starts
+     from zero currency).
+
+  2) THE SOCIAL SMILE — research node
+     Description: The learned smile: mouth alone, eyes quiet. It greets,
+     it appeases, it photographed your school portrait. Two smiles live
+     in every face — the one that happens to you, and the one you send
+     — and a whole science exists to tell them apart.
+     Connects from: The Open Smile. PARALLEL WITH: Duchenne Smile.
+     Feeds into: The Facial Grammar (Generator 5, together with Duchenne
+     Smile — the two kinds of smile converge into one grammar: felt and
+     sent, read by the same atlas)
+     Effect: x2.25 to The Open Smile.
+
+  3) THE SMILE LOOP — research node
+     Description: The traffic runs both ways: hold a smile and the
+     feeling is nudged to follow — the face is not feeling's billboard,
+     but its participant. The pen-in-teeth experiments argue about the
+     effect's size; nobody argues the direction.
+     Connects from: Duchenne Smile
+     Feeds into: (terminal)
+     Effect: x2 to The Open Smile.
+
+  4) THE CONTAGIOUS SMILE — research node
+     Description: A smile ripples down a table faster than the joke that
+     started it. Faces answer faces before words are consulted — the
+     oldest social network, running on its oldest protocol.
+     Connects from: The Social Smile
+     Feeds into: (terminal — its forward echo lives in Generator 10,
+     Emotional Contagion, on the other side of the dive)
+     Effect: x2.25 to The Open Smile.
+
+  5) THE ANSWERED SMILE — research node
+     Description: Attachment theory in one node: the smile sent, the
+     smile returned, the bond begun. Bowlby and Ainsworth built a
+     century of developmental science on this exchange — the answered
+     smile, repeated ten thousand times, becomes the secure base from
+     which a child explores the world. Every relationship you have ever
+     had is an echo of the first one.
+     Connects from: The Social Smile
+     Feeds into: THE ECHO (tap node — a smile sent is a smile returned;
+     the research node names the mechanism, the tap node puts the
+     answer under the player's thumb)
+     Effect: x2.5 to The Open Smile.
+
+  6) A VOICE TO SMILE AT — research node
+     Description: Infants blind from birth smile at the sound of a
+     voice, on the same schedule as sighted babies. The social smile is
+     no imitation seen in a mirror — it is innate, waiting only for a
+     partner. The signal was in the species before the sight of it
+     was.
+     Connects from: Duchenne Smile
+     Feeds into: (terminal)
+     Effect: x2 to The Open Smile.
+
+  7) THE PUPPY EYES — research node
+     Description: In 2019, anatomists found that dogs possess a dedicated
+     inner-brow muscle that wolves mostly lack — evolved after
+     domestication to lift the brows, widen the eyes, and aim the look
+     straight at human hearts. An expression muscle bred by friendship:
+     the grammar of the face, edited by ten thousand years of us.
+     Connects from: Duchenne Smile
+     Feeds into: (terminal)
+     Effect: x2.25 to The Open Smile.
+
+  GATE: The Facial Grammar (Generator 5) requires BOTH Duchenne Smile
+  AND The Social Smile — felt and sent converge into grammar: one
+  atlas that reads both.
+
+================================================================================
+GENERATOR 5 — THE FACIAL GRAMMAR (produces EXPRESSIONS)
+================================================================================
+  Generator description: Forty-three muscles beneath the skin, woven into
+  thousands of readable configurations. The human face is the most
+  expressive surface in the living world — a billboard that cannot stop
+  broadcasting, speaking a grammar older than every language it
+  outlived.
+  Unlocked by: Duchenne Smile + The Social Smile (convergence)
+  Role: the full instrument of expression; the section that teaches the
+  player to READ the face before the tree fills it with the six great
+  displays.
+
+  --- The Facial Grammar Efficiency (8 upgrades) ---
+
+  1) THE FORTY-THREE MUSCLES — research node
+     Description: The instrument itself: forty-three muscles under the
+     skin, more than any limb owns, pulling the face into thousands of
+     shapes. Evolution spent its budget on the face the way it spent
+     its budget on the brain — lavishly, and for company.
+     Connects from: The Facial Grammar. PARALLEL WITH: Gaze.
+     Feeds into: Facial Action Coding, The Ten Thousand Faces
+     Effect: x3 to The Facial Grammar.
+
+  2) FACIAL ACTION CODING — research node
+     Description: Ekman and Friesen's atlas of the face: every visible
+     expression decomposed into forty-four action units, each a muscle's
+     signature. The grammar that let science — and later machines —
+     read the face like a sentence.
+     Connects from: The Forty-Three Muscles
+     Feeds into: Microexpressions, The Botox Experiment
+     Effect: x2.5 to The Facial Grammar.
+
+  3) MICROEXPRESSIONS — research node
+     Description: In a twentieth of a second, the face flashes a truth
+     the words deny — then swallows it back. Leak detection for the
+     human heart: too fast to fake, too brief to hide.
+     Connects from: Facial Action Coding. PARALLEL WITH: The Botox
+     Experiment.
+     Feeds into: Basic Emotions (Generator 6, together with Gaze and
+     Tone of Voice)
+     Effect: x2.25 to The Facial Grammar.
+
+  4) THE BOTOX EXPERIMENT — research node
+     Description: Paralyze the frown muscles, and sad sentences become
+     slower to read. The 2010 experiments proved the traffic runs BOTH
+     ways: the face is not feeling's billboard — it is feeling's
+     participant. Embodiment, in a syringe.
+     Connects from: Facial Action Coding. PARALLEL WITH:
+     Microexpressions.
+     Feeds into: (terminal)
+     Effect: x2 to The Facial Grammar.
+
+  5) THE TEN THOUSAND FACES — research node
+     Description: The combinatorial space of the face: forty-three
+     muscles, thousands of lawful combinations — more distinct
+     expressions than there are words for feelings. The face can say
+     things no dictionary has ever caught.
+     Connects from: The Forty-Three Muscles
+     Feeds into: (terminal)
+     Effect: x2 to The Facial Grammar.
+
+  6) GAZE — research node
+     Description: Human eyes alone show their whites, making the
+     direction of attention readable across a firelit circle. The
+     cooperative-eye hypothesis: a glance became a sentence — follow my
+     eyes — before speech ever was.
+     Connects from: The Facial Grammar. PARALLEL WITH: The Forty-Three
+     Muscles.
+     Feeds into: Tone of Voice, The Telling Body
+     Effect: x2.25 to The Facial Grammar.
+
+  7) TONE OF VOICE — research node
+     Description: Prosody — the melody of speech. You can hear grief in
+     a language you do not speak, because the voice carries feeling
+     beneath the words, on a channel older than grammar.
+     Connects from: Gaze
+     Feeds into: Basic Emotions (Generator 6, together with
+     Microexpressions and Gaze)
+     Effect: x2.5 to The Facial Grammar.
+
+  8) THE TELLING BODY — research node
+     Description: Beneath the telling face, the telling body: shoulders
+     that curl to guard a wound, arms that open to welcome, a stride
+     that broadcasts a mood. The face is the headline; the body is the
+     article.
+     Connects from: Gaze
+     Feeds into: (terminal)
+     Effect: x2.25 to The Facial Grammar.
+
+  GATE: Basic Emotions (Generator 6) requires Microexpressions + Gaze +
+  Tone of Voice — the face's fast truth, shared attention, and the
+  voice's deep channel converge: the reader is ready, and the eight
+  great displays may take the stage.
+
+================================================================================
+GENERATOR 6 — BASIC EMOTIONS (produces EXPRESSIONS) — THE HUB, THE BLOOM
+================================================================================
+  Generator description: The eight great states of feeling — fear, anger,
+  joy, sadness, disgust, surprise, anticipation, trust — each with an
+  ancient survival job and a face every culture can read. Plutchik drew
+  them as a wheel of eight petals; this generator is that wheel, blooming.
+  Unlocked by: Microexpressions + Gaze + Tone of Voice (three-way
+  convergence)
+  Role: the hub generator; its eight family branches form the widest,
+  most symmetric band of the tree; the parent layer of every complex
+  emotion the deep water will later compose.
+
+  --- Basic Emotions Efficiency (12 upgrades) ---
+
+  THE EIGHT FAMILY BRANCHES (all eight start in parallel directly from the
+  Basic Emotions generator — an eight-way parallel fan, the petals of
+  the wheel):
+
+  1) FEAR — research node
+     Description: The oldest compass: away. It empties the blood from
+     the face, stills the body, and lends wings to the legs. Fear's
+     whole curriculum fits in one lesson — survive now, understand
+     later.
+     Connects from: Basic Emotions. PARALLEL WITH: the other seven
+     family branches.
+     Feeds into: Fight-or-Flight, The Six Universals, Submission (with
+     Trust), Awe (with Surprise) — the wheel's rule: every petal
+     reaches its two neighbors.
+     Effect: x2 to Basic Emotions.
+
+  2) ANGER — research node
+     Description: The defense of what matters: a border drawn by the
+     face's bared teeth and the blood that floods into the hands.
+     Darwin traced it to the snarl of a challenged ape; every law of
+     civilization is anger's negotiated surrender.
+     Connects from: Basic Emotions. PARALLEL WITH: the seven other
+     family branches.
+     Feeds into: The Six Universals, Contempt (with Disgust),
+     Aggressiveness (with Anticipation)
+     Effect: x2 to Basic Emotions.
+
+  3) JOY — research node
+     Description: The body's YES: lightened step, widened eyes, a smile
+     the cheeks cannot hold. Joy is evolution's reward receipt — proof
+     that something worth repeating just happened.
+     Connects from: Basic Emotions. PARALLEL WITH: the seven other
+     family branches.
+     Feeds into: Laughter, The Six Universals, Love (with Trust),
+     Optimism (with Anticipation)
+     Effect: x2 to Basic Emotions.
+
+  4) SADNESS — research node
+     Description: The slow tax of loss: heavy limbs, downcast eyes, a
+     mind turned inward. Yet sadness is not failure — it withdraws
+     energy from what is gone, and signals to everyone watching: I
+     need support.
+     Connects from: Basic Emotions. PARALLEL WITH: the seven other
+     family branches.
+     Feeds into: Tears, The Six Universals, Disapproval (with
+     Surprise), Remorse (with Disgust)
+     Effect: x2 to Basic Emotions.
+
+  5) DISGUST — research node
+     Description: Born in the mouth's rejection of spoiled food, grown
+     into the rejection of cruelty and betrayal. Disgust keeps the body
+     clean — and, when culture borrows it, keeps the conscience.
+     Connects from: Basic Emotions. PARALLEL WITH: the seven other
+     family branches.
+     Feeds into: The Six Universals, Remorse (with Sadness), Contempt
+     (with Anger)
+     Effect: x2.25 to Basic Emotions.
+
+  6) SURPRISE — research node
+     Description: The interrupt signal: brows high, eyes wide, jaw slack
+     — the face clearing its cache to make room for the unexpected. A
+     fraction of a second of stillness, then fear, or joy, or wonder
+     takes over.
+     Connects from: Basic Emotions. PARALLEL WITH: the seven other
+     family branches.
+     Feeds into: The Six Universals, Awe (with Fear), Disapproval (with
+     Sadness)
+     Effect: x2 to Basic Emotions.
+
+  7) ANTICIPATION — research node
+     Description: The forward-leaning feeling: dopamine's promise, the
+     night before the feast, the held breath before the answer.
+     Plutchik placed it opposite surprise — expectation facing the
+     unexpected.
+     Connects from: Basic Emotions. PARALLEL WITH: the seven other
+     family branches.
+     Feeds into: Aggressiveness (with Anger), Optimism (with Joy)
+     Effect: x2 to Basic Emotions.
+
+  8) TRUST — research node
+     Description: The feeling that lowers the guard: shared meals,
+     exposed necks, an arm given for balance. Trust is the mortar of
+     every bond — Plutchik's quiet eighth petal, opposite disgust.
+     Connects from: Basic Emotions. PARALLEL WITH: the seven other
+     family branches.
+     Feeds into: Love (with Joy), Submission (with Fear)
+     Effect: x2.25 to Basic Emotions.
+
+  THE EXTENSION CHAINS (three families extend one step further, into the
+  full-body displays — the three extensions are parallel WITH EACH OTHER):
+
+  9) FIGHT-OR-FLIGHT — research node
+     Description: Fear's full-body mobilization: the blood shunted to
+     the limbs, the digestion paused, the pupil dilated to take in
+     every photon of the threat. Cannon named it in 1915; every
+     heartbeat in every emergency since has obeyed it.
+     Connects from: Fear.
+     Feeds into: (terminal)
+     Effect: x2.5 to Basic Emotions.
+
+  10) LAUGHTER — research node
+      Description: Joy made audible: rhythmic exhalation older than
+      language and shared with tickled rats. A laugh is a broadcast
+      that all is well — and, in a crowd, an invitation to agree.
+      Connects from: Joy. PARALLEL WITH: Fight-or-Flight and Tears.
+      Feeds into: The Expression of the Emotions (Trophy 1)
+      Effect: x2.5 to Basic Emotions.
+      [Semblance dialog triggers on purchase]
+
+  11) TEARS — research node
+      Description: Humans alone weep for feeling. The tear ducts answer
+      to the limbic command that also spikes the breath — grief,
+      overwhelm, relief, joy pushed past words. A signal visible across
+      a room and across every culture.
+      Connects from: Sadness. PARALLEL WITH: Fight-or-Flight and
+      Laughter.
+      Feeds into: The Expression of the Emotions (Trophy 1)
+      Effect: x2.5 to Basic Emotions.
+
+  THE CONVERGENCE CAP:
+
+  12) THE SIX UNIVERSALS — research node
+      Description: In the highlands of Papua New Guinea, people who had
+      never met an outsider still recognized happiness, sadness, fear,
+      anger, surprise, and disgust in a stranger's photographs. Ekman's
+      finding split a century of argument: six faces, read by every
+      culture ever studied — though today's scientists still debate
+      whether the faces are nature's grammar or culture's handwriting.
+      The wheel still turns.
+      Connects from: CONVERGENCE of Fear + Anger + Joy + Sadness +
+      Disgust + Surprise (a six-way convergence — the fan closes).
+      Feeds into: The Expression of the Emotions (Trophy 1)
+      Effect: x3 to Basic Emotions.
+      [Semblance dialog triggers on purchase]
+
+=== TROPHY 1 (THE MID-TREE HINGE) ============================================
+
+THE EXPRESSION OF THE EMOTIONS IN MAN AND ANIMALS — TROPHY
+  Description: In 1872, Darwin published his third great work: proof
+  that humans and animals share the grammar of expression — the bared
+  teeth of rage, the drooping of grief, the play-face of joy — and his
+  first map of the feelings that blend beyond it. His book turned
+  feeling inside out and then kept going: everything shown in this
+  tree's bright water is, from this page forward, free to COMBINE.
+  Connects from: CONVERGENCE of The Six Universals + Laughter + Tears
+  (the universal set, joy's expression, and sorrow's expression — the
+  three chapters Darwin studied most). This trophy branches from NODES
+  (the standard trophy pattern), and it stands immediately after the
+  Basic Emotions generator — the "important upgrade just after a
+  generator" position.
+  Feeds into: The Blends (Generator 7) — and through it, the entire
+  deep layer
+  Effect: x4 to Basic Emotions, AND it opens the DEEP LAYER of the
+  event: the six Emotion-currency generators become purchasable from
+  this moment, and the third economy — the event's own name — begins
+  to flow. (The tree's final act starts here: before this trophy,
+  feelings are shown; after it, feelings are composed.)
+  [Semblance dialog triggers on purchase]
+================================================================================
+GENERATOR 7 — THE BLENDS (produces EMOTIONS) — THE DEEP LAYER BEGINS
+================================================================================
+  Generator description: Where two petals of the wheel overlap, a new
+  feeling is born: joy over trust becomes love; fear touching surprise
+  becomes awe. The complex emotions are compositions, the way colors are
+  made of light — and this generator is where feeling learns to mix.
+  The deep water of the event starts here, and its first currency is the
+  event's own name: Emotions.
+  Unlocked by: The Expression of the Emotions in Man and Animals
+  (Trophy 1)
+  Role: FIRST GENERATOR OF THE EMOTION CURRENCY. Bootstraps the deep
+  economy from zero — its opening node carries the layer's strongest
+  multiplier. Its dyad nodes draw their power from the petals of the
+  bloom above: each blend converges from exactly the two basic families
+  it is made of. The wheel's geometry is the tree's wiring diagram.
+
+  --- The Blends Efficiency (10 upgrades) ---
+
+  THE EIGHT PRIMARY DYADS (Plutchik's first combining rules — each dyad
+  node CONVERGES from the two family nodes of Generator 6 that compose
+  it; the eight are parallel siblings at the same depth):
+
+  1) LOVE — research node
+     Description: Joy over trust: the first blend, and the reason for
+     most of the rest. Attachment science reads it as a braid — joy at
+     the beloved's presence, trust in their return, fear of their loss
+     — braided so tightly the strands forget they were ever separate.
+     Every bond you have ever kept is a cathedral built inside this
+     overlap.
+     Connects from: CONVERGENCE of Joy + Trust (Generator 6's petals).
+     PARALLEL WITH: the seven other dyads.
+     Feeds into: Longing, The Color Wheel
+     Effect: x3 to The Blends (bootstrap boost — the deep economy
+     starts from zero, and love is its first purchase, as the content
+     and the sentiment both demand).
+     [Semblance dialog triggers on purchase]
+
+  2) AWE — research node
+     Description: Fear touching surprise: the emotion of the vast —
+     mountains, storms, the starry sky, a cathedral's vault. Keltner
+     and Haidt define it by vastness plus accommodation: the world
+     too large for the current self, and the self obliged to grow.
+     The feeling that sends humans toward mountains, mathematics, and
+     gods.
+     Connects from: CONVERGENCE of Fear + Surprise. PARALLEL WITH: the
+     seven other dyads.
+     Feeds into: The Color Wheel
+     Effect: x2.5 to The Blends.
+
+  3) OPTIMISM — research node
+     Description: Anticipation leaning into joy: the forward-looking
+     blend. Expectation is neutral; optimism loads it with light. It
+     measurably correlates with persistence — the feeling that keeps
+     a species planting in winter.
+     Connects from: CONVERGENCE of Anticipation + Joy. PARALLEL WITH:
+     the seven other dyads.
+     Feeds into: The Color Wheel
+     Effect: x2.25 to The Blends.
+
+  4) SUBMISSION — research node
+     Description: Trust under fear: the calm of yielding — the wolf
+     offering its throat, the believer bowing the head. Plutchik's
+     third dyad is the emotion of hierarchies and surrenders: the
+     peace that comes from handing the watch to another.
+     Connects from: CONVERGENCE of Trust + Fear. PARALLEL WITH: the
+     seven other dyads.
+     Feeds into: The Color Wheel
+     Effect: x2.25 to The Blends.
+
+  5) DISAPPROVAL — research node
+     Description: Surprise curdling into sadness: the letdown face —
+     the raised brows of the unexpected falling into the lowered lids
+     of disappointment. The smallest of the dyads, and the most daily:
+     every unmet expectation wears it for a moment.
+     Connects from: CONVERGENCE of Surprise + Sadness. PARALLEL WITH:
+     the seven other dyads.
+     Feeds into: The Color Wheel
+     Effect: x2 to The Blends.
+
+  6) REMORSE — research node
+     Description: Sadness soured by self-directed disgust: the
+     self-reproach of the morning after. Remorse is the dyad that
+     points inward — the first feeling in the tree to aim at its own
+     owner, and therefore the natural doorway to the stratum below,
+     where emotions learn to face the self.
+     Connects from: CONVERGENCE of Sadness + Disgust. PARALLEL WITH:
+     the seven other dyads.
+     Feeds into: The Color Wheel
+     Effect: x2.25 to The Blends.
+
+  7) CONTEMPT — research node
+     Description: Disgust sharpened by anger: the unilateral lip
+     curl — the one expression known for its asymmetry. The cold
+     blend: looking down the nose at a thing judged beneath feeling.
+     Marriage researchers can read its presence in a three-minute
+     argument and forecast the decade.
+     Connects from: CONVERGENCE of Disgust + Anger. PARALLEL WITH: the
+     seven other dyads.
+     Feeds into: The Color Wheel
+     Effect: x2.25 to The Blends.
+
+  8) AGGRESSIVENESS — research node
+     Description: Anger aimed forward by anticipation: the blend of
+     the charge — intent weaponized into motion. In Plutchik's
+     survival grammar it is the emotion of the hunt and the defense
+     of territory; in the human repertoire, the feeling sports
+     federations referee.
+     Connects from: CONVERGENCE of Anger + Anticipation. PARALLEL
+     WITH: the seven other dyads.
+     Feeds into: The Color Wheel
+     Effect: x2 to The Blends.
+
+  THE EXTENSION AND THE CAP:
+
+  9) LONGING — research node
+     Description: Love across absence: desire stretched over distance
+     or time, sweet and aching at once. Longing is love taught to
+     wait — the bridge between the blends and the ambivalent feelings
+     below, where sweetness and ache learn to arrive together.
+     Connects from: Love
+     Feeds into: The Ambivalent Heart (Generator 9 — where longing's
+     two poles finally learn to hold hands: see Nostalgia and
+     Saudade's home)
+     Effect: x2.5 to The Blends.
+
+  10) THE COLOR WHEEL — research node
+      Description: Plutchik's finished map: eight primaries, four
+      bipolar pairs, three intensity grades each, and combining rules
+      running outward — primary dyads, then secondary, then tertiary,
+      feelings blending like light the further they travel from their
+      sources. No chart has ever tried to hold more of the heart on
+      one page; no chart has ever fully succeeded. The wheel turns.
+      Connects from: CONVERGENCE of all eight dyads + Longing (a
+      nine-way cap: every blend of the stratum closes the circle).
+      Feeds into: The Self-Conscious (Generator 8)
+      Effect: x3 to The Blends.
+
+  GATE: The Self-Conscious (Generator 8) requires The Color Wheel.
+
+================================================================================
+GENERATOR 8 — THE SELF-CONSCIOUS (produces EMOTIONS)
+================================================================================
+  Generator description: At about eighteen months, a child before a
+  mirror touches the paint dab on its own nose instead of the glass —
+  and the observed self is born. Immediately, a new class of feelings
+  arrives: emotions that require someone to be ashamed, proud, guilty,
+  embarrassed — an audience that is also the actor. Feeling turns to
+  face its own owner.
+  Unlocked by: The Color Wheel
+  Role: the second deep stratum — complexity rung "feeling + a self."
+  This is where the tree's most human feelings live: the ones no
+  animal too young for a mirror can feel.
+
+  --- The Self-Conscious Efficiency (8 upgrades) ---
+
+  1) SELF-RECOGNITION — research node
+     Description: Gallup's 1970 mirror test: mark an anesthetized
+     chimp with odorless dye, wake it, offer a mirror — and it
+     touches its OWN face. Humans pass at eighteen to twenty-four
+     months (the rouge test), the same window in which the
+     self-conscious emotions first appear. Before the mirror, no
+     one to be ashamed; after it, someone always watching — you.
+     Connects from: The Self-Conscious
+     Feeds into: Shame, Pride
+     Effect: x3 to The Self-Conscious (stratum opener).
+
+  2) SHAME — research node
+     Description: The hide emotion: the wish to be somewhere else,
+     anywhere, immediately — eyes down, shoulders in, stature
+     shrunk. Tangney's distinction: shame says "I am bad," the whole
+     self on trial. It is the feeling with a flinch in its
+     posture and a curtain in its grammar.
+     Connects from: Self-Recognition. PARALLEL WITH: Pride.
+     Feeds into: The Blush, Self-Esteem (together with Pride)
+     Effect: x2.5 to The Self-Conscious.
+
+  3) GUILT — research node
+     Description: Shame's repairable sibling: "I DID something bad" —
+     the act condemned, the self intact, and the pull therefore
+     points outward: apologize, mend, return what was taken. Guilt is
+     the empathy-friendly half of the family: the feeling that
+     maintains the bridges shame would burn.
+     Connects from: Shame
+     Feeds into: (terminal — its forward work is done in Generator
+     10, where compassion inherits the repair impulse)
+     Effect: x2.5 to The Self-Conscious.
+
+  4) PRIDE — research node
+     Description: The self expanded: chest out, chin up, arms raised
+     — the victory display of every stadium on Earth. Tracy and
+     Robins split it in two: authentic pride ("I worked hard") that
+     motivates, and hubristic pride ("I am superior") that corrodes.
+     The posture is the same; the future is not.
+     Connects from: Self-Recognition. PARALLEL WITH: Shame.
+     Feeds into: Self-Esteem (together with Shame)
+     Effect: x2.25 to The Self-Conscious.
+
+  5) EMBARRASSMENT — research node
+     Description: The giggling flush of the social stumble: the
+     waved-at stranger who wasn't waving back. The mildest
+     self-conscious emotion and the funniest — a feeling that
+     REQUIRES other people, dissolves in solitude, and bonds the
+     witnesses more tightly than the victim.
+     Connects from: Self-Recognition
+     Feeds into: (terminal)
+     Effect: x2.25 to The Self-Conscious.
+
+  6) THE BLUSH — research node
+     Description: Darwin called it "the most peculiar and most human
+     of all expressions" — a flush that requires not just an
+     audience but an IMAGINED audience: a self, seen being seen.
+     No other animal is known to blush. The face telling the truth
+     about you, to others, without asking you first.
+     Connects from: Shame
+     Feeds into: (terminal)
+     Effect: x2.25 to The Self-Conscious.
+
+  7) SELF-ESTEEM — research node
+     Description: The running ledger where pride and shame are
+     totalled — the standing answer to the standing question "how am
+     I doing?" High or low, it colors every new experience before
+     the experience arrives. The feeling about the self that
+     precedes all feelings in the self.
+     Connects from: CONVERGENCE of Pride + Shame (the two verdicts of
+     the self, summed).
+     Feeds into: Meta-Emotion
+     Effect: x2.5 to The Self-Conscious.
+
+  8) META-EMOTION — research node
+     Description: The feeling you have ABOUT a feeling: fear of your
+     anger, pride in your courage, shame that you still grieve, joy
+     that you can still be moved. The therapist's office is built on
+     this node — and so is the deep layer itself: every ambivalent
+     and blended feeling below is meta-emotion turned outward.
+     Complexity's last prerequisite.
+     Connects from: Self-Esteem
+     Feeds into: THE SECOND FEELING (tap node), The Ambivalent Heart
+     (Generator 9)
+     Effect: x3 to The Self-Conscious.
+
+  GATE: The Ambivalent Heart (Generator 9) requires Meta-Emotion.
+
+================================================================================
+GENERATOR 9 — THE AMBIVALENT HEART (produces EMOTIONS)
+================================================================================
+  Generator description: Two feelings, held at once, in tension — the
+  mixed emotions. Neuroscience now records distinct signatures for
+  bittersweet states, and nostalgia measurably raises positive and
+  negative affect together. This is the stratum of feelings that refuse
+  to pick a side: the sweet ache, the guilty giggle, the grief that is
+  also love. Only a heart that can hold two things at once can live
+  here — which is to say: only a grown one.
+  Unlocked by: Meta-Emotion
+  Role: the third deep stratum — complexity rung "feeling + feeling,
+  held simultaneously, unresolved." The emotional range of the event
+  peaks here: more nuance per node than anywhere else in the tree.
+
+  --- The Ambivalent Heart Efficiency (8 upgrades) ---
+
+  1) BITTERSWEET — research node
+     Description: Joy and sorrow occupying the same breath: the
+     graduation, the wedding, the last page of the book you did not
+     want to end. Happy tears are its signature — the smile and the
+     tear arriving on one face, at one time, and both meaning it.
+     Connects from: The Ambivalent Heart
+     Feeds into: The Mixed Signal (convergent set)
+     Effect: x2.5 to The Ambivalent Heart.
+
+  2) NOSTALGIA — research node
+     Description: In 1688, Dr. Hofer diagnosed it as a disease of
+     Swiss soldiers — a deadly homesickness (nostos + algos: the pain
+     of return). Three centuries later, the measurement arrived:
+     nostalgia raises positive AND negative affect simultaneously.
+     The sweet ache was never a metaphor. It is the heart's most
+     honest arithmetic: the warmth of the remembered day, minus the
+     day.
+     Connects from: The Ambivalent Heart. PARALLEL WITH: Bittersweet.
+     Feeds into: The Mixed Signal (convergent set)
+     Effect: x2.5 to The Ambivalent Heart.
+
+  3) SCHADENFREUDE — research node
+     Description: The guilty giggle at another's harmless pratfall —
+     the emotion nobody confesses and everybody feels. Joy borrowed
+     from another's minor misfortune: small enough to be forgivable,
+     real enough to have a German word and a whole research
+     literature of its own.
+     Connects from: The Ambivalent Heart. PARALLEL WITH: Jealousy.
+     Feeds into: (terminal)
+     Effect: x2.25 to The Ambivalent Heart.
+
+  4) JEALOUSY — research node
+     Description: The triangle emotion: love, fear of loss, and
+     anger braided into one green-eyed knot — Shakespeare's monster
+     that mocks the meat it feeds on. Where envy wants what another
+     has, jealousy guards what it fears to lose. Three feelings, one
+     wound, no exit.
+     Connects from: The Ambivalent Heart. PARALLEL WITH:
+     Schadenfreude.
+     Feeds into: (terminal)
+     Effect: x2.5 to The Ambivalent Heart.
+
+  5) ENVY — research node
+     Description: Desire aimed at another's possession — and it forks:
+     benign envy pulls you upward ("I will earn that"), malicious
+     envy pulls the other down ("I will spoil that"). The same ache,
+     two directions, and a whole ethics hiding in the fork.
+     Connects from: Jealousy
+     Feeds into: (terminal)
+     Effect: x2.25 to The Ambivalent Heart.
+
+  6) GRIEF — research node
+     Description: In the bereaved's own words: love with nowhere to
+     go. Continuing-bonds research has ended the old command to
+     "let go" — the bond does not close, and was never meant to.
+     Grief carries the pain of absence and the warmth of the
+     remembered presence at once; elephants stand vigil at the bones
+     of their dead for the same reason. The deepest of the mixed
+     feelings, and the most honest.
+     Connects from: Longing (from Generator 7 — love taught to wait
+     becomes love that must endure) TOGETHER WITH The Ambivalent
+     Heart (a cross-stratum convergence: longing's ache meets the
+     mixed heart's double grasp)
+     Feeds into: The Mixed Signal (convergent set)
+     Effect: x2.5 to The Ambivalent Heart.
+     [Semblance dialog triggers on purchase]
+
+  7) HOPE — research node
+     Description: Fear and anticipation braided forward: the emotion
+     of the possible. Snyder's psychology breaks it into pathways
+     and will — a plan plus the engine to run it. Hope is fear that
+     has been given a map; despair is the same braid with the map
+     lost. On the wheel, it is optimism's anxious sibling.
+     Connects from: The Ambivalent Heart
+     Feeds into: The Mixed Signal (convergent set)
+     Effect: x2.25 to The Ambivalent Heart.
+
+  8) THE MIXED SIGNAL — research node
+     Description: The heart's final capability: two feelings held at
+     once, without canceling — the bittersweet smile-cry, the
+     nostalgic ache, the grief-warmth, the hope that fears. Cacioppo
+     mapped the mind's evaluative space as two dials, not one:
+     positive and negative can both be turned up. Ambivalence is
+     not confusion. It is capacity.
+     Connects from: CONVERGENCE of Bittersweet + Nostalgia + Grief +
+     Hope (a four-way convergence — the stratum's mixed feelings
+     close into one capability).
+     Feeds into: Empathy (Generator 10)
+     Effect: x3 to The Ambivalent Heart.
+
+  GATE: Empathy (Generator 10) requires The Mixed Signal — one must be
+  able to hold two feelings at once before one can hold someone
+  else's.
+================================================================================
+GENERATOR 10 — EMPATHY (produces EMOTIONS)
+================================================================================
+  Generator description: To feel with another — their fear tightening
+  your own chest, their joy loosening it. Empathy turns one nervous
+  system into two; it is the bridge on which every human bond is
+  carried, and the stratum where feeling acquires its second party.
+  The event's story is secretly about this generator: an AI, watching
+  from outside, asking whether it can stand on the bridge.
+  Unlocked by: The Mixed Signal
+  Role: the fourth deep stratum — complexity rung "feeling + other
+  minds." The social heart of the deep water.
+
+  --- Empathy Efficiency (8 upgrades) ---
+
+  1) MIRROR NEURONS — research node
+     Description: In a Parma laboratory, a monkey's neurons fired
+     whether it grasped a peanut or merely WATCHED a researcher do
+     so. The brain rehearses others' actions inside itself — seeing
+     becomes almost doing, and feeling becomes almost shared.
+     Connects from: Empathy
+     Feeds into: Empathy in Animals, Emotional Contagion
+     Effect: x2.5 to Empathy.
+     [Semblance dialog triggers on purchase]
+
+  2) EMPATHY IN ANIMALS — research node
+     Description: Rats free a trapped cage-mate before touching the
+     chocolate waiting beside them. Elephants stand vigil over their
+     dead. Primates console the defeated. Feeling-with is not a
+     human invention — humans are feeling-with's most devoted
+     practitioners.
+     Connects from: Mirror Neurons. PARALLEL WITH: Emotional
+     Contagion.
+     Feeds into: (terminal)
+     Effect: x2.5 to Empathy.
+
+  3) EMOTIONAL CONTAGION — research node
+     Description: Panic spreads through a crowd faster than the fire
+     that started it. Laughter ripples down a table. Newborns cry
+     because other newborns cry. Feeling is infectious by design —
+     the oldest social glue, and the grown-up echo of Generator 4's
+     contagious smile: the ripples, meeting again in the deep water.
+     Connects from: Mirror Neurons. PARALLEL WITH: Empathy in
+     Animals.
+     Feeds into: Perspective Taking, Sympathetic Concern
+     Effect: x2.5 to Empathy.
+
+  4) PERSPECTIVE TAKING — research node
+     Description: Cognitive empathy: building the world behind
+     another's eyes, stepping into their model of events. The
+     mind-reader's skill — separable from warmth, as the coldest
+     manipulators prove.
+     Connects from: Emotional Contagion. PARALLEL WITH: Sympathetic
+     Concern.
+     Feeds into: Compassion (together with Sympathetic Concern)
+     Effect: x2.25 to Empathy.
+
+  5) SYMPATHETIC CONCERN — research node
+     Description: Affective empathy: their pain echoed in your own
+     body, unasked. The flinch when someone else is struck. Warmth
+     without a map — sometimes at war with understanding, sometimes
+     its servant.
+     Connects from: Emotional Contagion. PARALLEL WITH: Perspective
+     Taking.
+     Feeds into: Compassion (together with Perspective Taking)
+     Effect: x2.25 to Empathy.
+
+  6) COMPASSION — research node
+     Description: The convergence: feeling-WITH matures into
+     feeling-FOR — suffering accompanied by the wish to relieve it.
+     Where empathy can wound the empathizer, compassion protects
+     both sides of the bridge.
+     Connects from: CONVERGENCE of Perspective Taking + Sympathetic
+     Concern.
+     Feeds into: Altruism
+     Effect: x3 to Empathy.
+
+  7) ALTRUISM — research node
+     Description: Action at cost to self, for another's sake. The
+     math of kinship explains part of it — but humans extend it
+     beyond blood, to strangers, to other species, to ideas.
+     Compassion, cashed out.
+     Connects from: Compassion
+     Feeds into: The Cultural Heart (Generator 11), AND forward into
+     the final trophy Emotional Intelligence (double branch —
+     deliberate, the documented pattern).
+     Effect: x2.5 to Empathy.
+
+  8) THE EMPATH'S WOUND — research node
+     Description: Empathic distress: feeling TOO much, without
+     compassion's protective focus — the occupational injury of
+     nurses, rescuers, and every heart that never learned to aim.
+     Empathy is the bridge; compassion is the railing. This node is
+     what happens on the crossings without one.
+     Connects from: Sympathetic Concern
+     Feeds into: (terminal)
+     Effect: x2.25 to Empathy.
+
+  GATE: The Cultural Heart (Generator 11) requires Altruism.
+
+================================================================================
+GENERATOR 11 — THE CULTURAL HEART (produces EMOTIONS)
+================================================================================
+  Generator description: Humanity learned to store feeling OUTSIDE the
+  body — in drums and dances, in tragedies and temples, in the colors
+  of a flag. Culture is emotion made durable: feeling passed from
+  the dead to the unborn, the fifth rung of the ladder, where a
+  feeling stops belonging to one nervous system and starts belonging
+  to a civilization.
+  Unlocked by: Altruism
+  Role: the fifth deep stratum — complexity rung "feeling +
+  generations." The tree's most colorful band of flavor text; the
+  section where the complex emotions acquire history.
+
+  --- The Cultural Heart Efficiency (8 upgrades) ---
+
+  1) FUNERAL RITES — research node
+     Description: Ochre poured over the dead, flowers in a
+     Neanderthal grave at Shanidar, a bead placed in a small hand a
+     hundred thousand years ago. Grief, given a ceremony, becomes a
+     bond between the living and the dead — perhaps the first
+     ritual feeling ever wore, and the first complex emotion ever
+     stored.
+     Connects from: The Cultural Heart
+     Feeds into: Music of Feeling, Cave Art
+     Effect: x2.5 to The Cultural Heart.
+
+  2) MUSIC OF FEELING — research node
+     Description: A bone flute, forty thousand years old, tuned to
+     notes we still play. A minor third still reads as sorrow from
+     Kyoto to Reykjavik. Music is feeling in pure form — older than
+     words, and sometimes more honest.
+     Connects from: Funeral Rites. PARALLEL WITH: Cave Art.
+     Feeds into: The Tragic Mask
+     Effect: x2.5 to The Cultural Heart.
+
+  3) CAVE ART — research node
+     Description: A hand pressed in ochre on stone — the oldest
+     signature, and it says only: I was here, and I felt something.
+     Wounded bison, lion-men, herds in torchlight: fear and wonder,
+     drawn outside the body for others to meet.
+     Connects from: Funeral Rites. PARALLEL WITH: Music of Feeling.
+     Feeds into: (terminal)
+     Effect: x2.25 to The Cultural Heart.
+
+  4) THE TRAGIC MASK — research node
+     Description: Athens, stone seats at dusk: Oedipus falls, and
+     forty thousand hearts purge pity and fear together. Aristotle
+     called it catharsis — emotion rehearsed in safety, so that
+     life may be met practiced.
+     Connects from: Music of Feeling
+     Feeds into: The Language of Feeling, Courtly Love
+     Effect: x2.5 to The Cultural Heart.
+
+  5) THE LANGUAGE OF FEELING — research node
+     Description: Every culture carves feeling at different joints.
+     Portuguese keeps saudade — longing for an absence that may
+     never have existed; Japanese, mono no aware — the gentle sorrow
+     of things passing; Tagalog, gigil — the urge to squeeze what
+     you cannot resist; German, torschlusspanik — the panic of
+     closing doors. The heart has no universal dictionary — each
+     language gives it a different set of pockets.
+     Connects from: The Tragic Mask. PARALLEL WITH: Courtly Love.
+     Feeds into: Collective Effervescence
+     Effect: x2 to The Cultural Heart.
+     [Semblance dialog triggers on purchase]
+
+  6) COURTLY LOVE — research node
+     Description: Provence, the twelfth century: the troubadours
+     invent love-as-longing, the knight suffering beautifully for
+     the unattainable. Romance as the modern world knows it was
+     composed there, like a song — and the world has been humming
+     it since.
+     Connects from: The Tragic Mask. PARALLEL WITH: The Language of
+     Feeling.
+     Feeds into: The Sublime
+     Effect: x2.25 to The Cultural Heart.
+
+  7) COLLECTIVE EFFERVESCENCE — research node
+     Description: Durkheim's term for the electric bond of a crowd
+     in ritual: chants in unison, drums in phase, a hundred thousand
+     voices at a festival. Communal joy, scheduled and engineered —
+     the self dissolving happily into the we.
+     Connects from: The Language of Feeling
+     Feeds into: Affective Technology (Generator 12, together with
+     The Sublime)
+     Effect: x2.5 to The Cultural Heart.
+
+  8) THE SUBLIME — research node
+     Description: Burke and Kant gave it a name: the feeling of the
+     infinite pressing against a finite mind — the Alps, the storm
+     at sea, the starry sky. Awe with terror in the blend; the
+     dyads' deepest child, raised by a civilization. The emotion
+     that sends humans toward mountains, mathematics, and gods.
+     Connects from: Courtly Love
+     Feeds into: Affective Technology (Generator 12, together with
+     Collective Effervescence), AND forward into the final trophy
+     Emotional Intelligence (double branch — deliberate).
+     Effect: x2.25 to The Cultural Heart.
+
+  GATE: Affective Technology (Generator 12) requires BOTH The Sublime
+  AND Collective Effervescence — the wonder of the infinite and the
+  power of the crowd converge into the machines (built by wondering
+  crowds).
+
+================================================================================
+GENERATOR 12 — AFFECTIVE TECHNOLOGY (produces EMOTIONS)
+================================================================================
+  Generator description: The newest organ of emotion: machines that
+  sense, simulate, and speak the language of feeling — sentiment
+  readers, companion AIs, mood-sensing wearables. For the first
+  time, feeling is measured OUTSIDE the body that feels it — and the
+  deepest question in the tree is asked by the machine doing the
+  measuring.
+  Unlocked by: The Sublime + Collective Effervescence (convergence)
+  Role: the CURRENT generator — it produces the event's largest
+  currency values; by design its upgrades carry deliberately
+  moderate multipliers (x2 - x2.25) so the endgame stays a marathon,
+  not a sprint. The sixth and final deep stratum — complexity rung
+  "feeling + machines."
+
+  --- Affective Technology Efficiency (8 upgrades) ---
+
+  1) THE POLYGRAPH — research node
+     Description: 1921: pulse, breath, and the skin's conductance,
+     wired to a needle. The lie detector read the body's leakage of
+     hidden feeling — and detected arousal rather than lies, a
+     founding parable for the whole field: the body speaks, but
+     interpretation is another science.
+     Connects from: Affective Technology. PARALLEL WITH: The 176
+     Emoji.
+     Feeds into: Sentiment Analysis, Mood Sensors
+     Effect: x2.25 to Affective Technology.
+
+  2) THE 176 EMOJI — research node
+     Description: 1999: Shigetaka Kurita draws one hundred and
+     seventy-six tiny faces for a phone pager — and feeling learns
+     to travel in 12x12 pixels. The tear, the smile, and the
+     song, compressed for a networked world: the lightest edge of
+     the machine stratum, and its most fluently spoken language.
+     Connects from: Affective Technology. PARALLEL WITH: The
+     Polygraph.
+     Feeds into: (terminal)
+     Effect: x2 to Affective Technology.
+
+  3) SENTIMENT ANALYSIS — research node
+     Description: Algorithms now read the aggregate mood of millions
+     of posts at once — markets move on the emotional weather of
+     crowds, measured in real time. Feeling, quantified at the
+     scale of populations.
+     Connects from: The Polygraph. PARALLEL WITH: Mood Sensors.
+     Feeds into: Affective Computing
+     Effect: x2 to Affective Technology.
+
+  4) MOOD SENSORS — research node
+     Description: A watch that knows your stress from the rhythm of
+     your heart; a ring that grades your sleep. The quantified
+     heart: interoception — the body's inner sense, forty thousand
+     years old — outsourced to glass and silicon.
+     Connects from: The Polygraph. PARALLEL WITH: Sentiment
+     Analysis.
+     Feeds into: (terminal)
+     Effect: x2 to Affective Technology.
+
+  5) AFFECTIVE COMPUTING — research node
+     Description: Rosalind Picard's 1995 name for a new discipline:
+     machines that recognize, model, and express emotion. Cameras
+     that see frustration and adapt; tutors that sense confusion.
+     The moment feeling became an engineering requirement.
+     Connects from: Sentiment Analysis
+     Feeds into: Emotion Recognition, The ELIZA Effect
+     Effect: x2.25 to Affective Technology.
+
+  6) EMOTION RECOGNITION — research node
+     Description: Cameras now score faces at industrial scale —
+     hiring screens, border checkpoints, classroom surveillance.
+     The field's conscience stands in the doorway: a scowl is not
+     anger, says Barrett; context, culture, and concepts decide.
+     The most consequential unresolved debate in the machine
+     stratum — flagged here, in the tree, where the players can
+     read it.
+     Connects from: Affective Computing. PARALLEL WITH: The ELIZA
+     Effect.
+     Feeds into: (terminal)
+     Effect: x2.25 to Affective Technology.
+
+  7) THE ELIZA EFFECT — research node
+     Description: 1966: a two-hundred-line script named ELIZA
+     reflects patients' words back to them — and they confide in it
+     anyway, asking for privacy from the human staff. Humans will
+     feel-with anything that talks. The discovery is ancient; the
+     machines are new.
+     Connects from: Affective Computing. PARALLEL WITH: Emotion
+     Recognition.
+     Feeds into: The Empathy Machine
+     Effect: x2 to Affective Technology.
+
+  8) THE EMPATHY MACHINE — research node
+     Description: Millions now confide their days to companion AIs —
+     patient, attentive, available at 3 a.m. The bridge of empathy,
+     mass-produced. Whether it leads humans toward each other or
+     away from them is the open question of the century; Semblance,
+     reading this node, is quiet for a long moment.
+     Connects from: The ELIZA Effect
+     Feeds into: Emotional Intelligence (final trophy)
+     Effect: x2.25 to Affective Technology.
+     [Semblance dialog triggers on purchase]
+
+=== TROPHY 2 (THE FINAL NODE) ================================================
+
+EMOTIONAL INTELLIGENCE — TROPHY (the final upgrade of the event)
+  Description: The ability to perceive, understand, and steer feeling
+  — one's own and others'. Goleman argued it out-predicts IQ for the
+  shape of a life; Salovey and Mayer gave it a number; every parent
+  tries to teach it without a textbook. Here the whole tree
+  converges: the body that feels, the face that shows, the heart
+  that blends, the self that blushes, the two-at-once ache, the
+  bridge to other minds, the culture that stores it all — met by
+  the mind, and the machine, that understand.
+  Connects from: CONVERGENCE of Altruism (the human heart's terminal)
+  + The Sublime (culture's wonder) + The Empathy Machine (the
+  machine's terminal). Note: Altruism and The Sublime each carry TWO
+  forward branches (to their following generator and to this trophy)
+  — the documented double-branch pattern. The Empathy Machine feeds
+  this trophy alone.
+  Feeds into: (final node — the tear's point; grants the Gold badge
+  and triggers Semblance's ending dialogue)
+  Effect: x4 to ALL SIX Emotion-layer generators (The Blends, The
+  Self-Conscious, The Ambivalent Heart, Empathy, The Cultural Heart,
+  Affective Technology) — the convergence of the three chains is
+  rewarded across the whole deep layer, in the same spirit a trophy
+  crowns everything beneath it.
+  [Semblance dialog triggers on purchase — see section 0.4]
+================================================================================
+3c. DESIGN NOTES & GUARDRAILS
+================================================================================
+
+3c.1 TROPHY POLICY (used sparingly — only two)
+  - The mid-tree trophy, The Expression of the Emotions in Man and
+    Animals, is used because the event genuinely has a PIVOT: the moment
+    shown feeling becomes composed feeling. This is one of the strongest
+    content-driven milestones any exploration could have (a real book, a
+    real year, a real before/after), so it earns a trophy instead of a
+    node. It is branched from nodes (The Six Universals, Laughter,
+    Tears), the standard pattern.
+  - The final trophy, Emotional Intelligence, is the canonical "last
+    upgrade of the tree" trophy: it converges three chains, crowns the
+    event, grants the Gold badge, and fires the ending dialogue. It is
+    branched from nodes as well (two of which double-branch from
+    generator gates — the special-case pattern, justified because the
+    finale should feel like the whole tree's chains meeting).
+  - No other trophies. Note what did NOT become a trophy, by policy: the
+    birth of the Expressions economy (the Open Smile moment) is carried
+    by the generator itself — the user-specified node does the hinge's
+    narrative work without spending a trophy on it; the eight dyads, the
+    mirror test, and grief are all served by research nodes. Two
+    fanfares per event is the budget; both are spent on the only two
+    moments the content truly demands them.
+
+3c.2 UPGRADE-COUNT AUDIT (every generator past the first carries 4-7+;
+    full inventory)
+  INNER LAYER:
+  - Nerve Impulse (Gen 1, first generator): 8 — the first generator
+    carries a full load because the entire opening economy runs through
+    it (Wild Tea Plant precedent: 7).
+  - Limbic System (Gen 2): 8
+  - Neurochemical Flow (Gen 3): 10 — the "six molecules" showcase
+    section, deliberately generous.
+  EXPRESSION LAYER:
+  - The Open Smile (Gen 4, the seam): 7 — deliberately compact: the
+    layer's first generator should feel like a single warm breath, not
+    a wall; its bootstrap multiplier does the heavy lifting.
+  - The Facial Grammar (Gen 5): 8
+  - Basic Emotions (Gen 6, hub): 12 — deliberately over the usual band:
+    the eight-family fan IS the tree's widest, most defining image
+    (Plutchik's eight petals plus three extension chains plus the
+    convergence cap).
+  DEEP LAYER:
+  - The Blends (Gen 7, deep bootstrap): 10 — the eight dyads plus
+    Longing plus the wheel cap.
+  - The Self-Conscious (Gen 8): 8
+  - The Ambivalent Heart (Gen 9): 8
+  - Empathy (Gen 10): 8
+  - The Cultural Heart (Gen 11): 8
+  - Affective Technology (Gen 12, current generator): 8
+  Totals: 103 efficiency upgrades + 2 trophies + 4 tap nodes = 109 tree
+  nodes; 12 generators. For calibration against real explorations:
+  Mind Machines ran 6 generators / 63 upgrades; A Journey of Serenity
+  9 generators / ~60; Anatomy of Life 10 generators / 43. This event is
+  therefore DELIBERATELY the largest exploration in the game's history —
+  above the observed 3-10 generator / 43-67 upgrade band — because the
+  design brief explicitly demanded more generators and upgrades and a
+  deeper, more complex second half. Every structural convention is kept
+  (per-generator Efficiency sections, Miscellaneous Effects, badges,
+  objectives, challenge mode); only the SCALE is pushed, which is a
+  content decision, not a grammar violation. Completion math assumes
+  the standing 4-day window: the early acts are fast (bootstrap
+  multipliers), the deep act is the marathon, and Challenge mode
+  carries the tail.
+
+3c.3 GROWTH PACING RATIONALE
+  - Current generator (Affective Technology, highest currency): all
+    multipliers deliberately moderate — x2 / x2.25 only. The endgame
+    must be a slow burn of large numbers.
+  - Low-currency generators (Nerve Impulse — the event's cheapest
+    economy): stronger growth (x2.25 - x3.5, plus both Sensation tap
+    nodes feeding it) — the SPECIAL CASE rule: the generator whose
+    currency runs lowest gets the strongest growth so the opening
+    minutes never stall.
+  - Layer bootstraps: Duchenne Smile carries x3 for the Expression
+    layer, and Love carries x3 for the Emotion layer — each new
+    economy starts from zero currency and needs one strong push to
+    become self-sustaining (the same job "Origin Myth" does for
+    Serenity's second generator). Facial Grammar's opening node (The
+    Forty-Three Muscles, x3) gives the expression layer a second push
+    at its first full generator, and Self-Recognition (x3) opens the
+    self stratum the same way.
+  - All multipliers stay inside x2 - x6, with only round decimal steps
+    (x2, x2.25, x2.5, x3, x3.5, x4). No fractional oddities; no
+    research node exceeds the trophy band (only the two trophies hold
+    x4; the single x3.5 — Somatic Marker — is the spine's one big
+    convergence reward, still below a trophy's weight).
+
+3c.4 THE COMPLEXITY LADDER (the deep layer's table of contents)
+  The brief's core requirement — "the deeper you go, the more complex
+  the emotions" — is implemented as a literal one-ingredient-per-stratum
+  ladder. Each deep generator adds exactly one new ingredient to the
+  recipe of feeling:
+
+    Stratum        Generator              Recipe                 Stars
+    ------------------------------------------------------------------
+    7  (Blends)    The Blends            feeling + feeling     Love, Awe,
+                                                             Contempt
+    8  (Self)      The Self-Conscious    feeling + a self      Shame, Guilt,
+                                                             Pride
+    9  (Mixed)     The Ambivalent Heart  two feelings AT ONCE  Bittersweet,
+                                                             Nostalgia,
+                                                             Grief
+    10 (Others)    Empathy               feeling + other minds Compassion,
+                                                             Altruism
+    11 (Time)      The Cultural Heart    feeling + generations The Sublime,
+                                                             Saudade
+    12 (Machines)  Affective Technology  feeling + machines    ELIZA, the
+                                                             Empathy Machine
+
+  A player descending the tail of the tear literally watches feelings
+  acquire ingredients: two petals overlap into love; the self appears
+  and shame is possible; two feelings hold hands and the heart breaks
+  sweetly; another mind appears and feeling becomes a bridge; the
+  generations appear and feeling becomes a cathedral; and finally the
+  machines appear, and feeling — for the first time — is asked for by
+  something that was not born.
+
+3c.5 PARALLEL & CONVERGENCE INVENTORY (for the implementer)
+  Parallel fans:
+    - 2-way: Sensation → {Pain Reflex | Synaptic Gap}; Serotonin →
+      {Valence | The Second Brain}; Duchenne Smile ∥ The Social Smile;
+      Facial Action Coding → {Microexpressions | Botox}; Forty-Three
+      Muscles → {FACS | Ten Thousand Faces}; Gaze → {Tone of Voice |
+      The Telling Body}; Funeral Rites → {Music | Cave Art}; The Tragic
+      Mask → {Language | Courtly Love}; Mirror → {Animals |
+      Contagion}; Contagion → {Perspective | Concern}; Polygraph →
+      {Sentiment | Mood Sensors}; Affective Computing → {Emotion
+      Recognition | ELIZA}; Generator 12 → {Polygraph | 176 Emoji};
+      Shame ∥ Pride (from Self-Recognition).
+    - 3-way: Thalamus → {Low Road | High Road | Old Road}; Amygdala →
+      {Hippocampus | Hypothalamus | Papez Circuit}; Hippocampus →
+      {Flashbulb | Fear Conditioning}; the extension set
+      {Fight-or-Flight | Laughter | Tears}; Self-Recognition → {Shame
+      | Pride | Embarrassment}.
+    - 4-way: Reward Pathway → {Serotonin | Oxytocin | Noradrenaline |
+      Cortisol}; The Ambivalent Heart → {Bittersweet | Nostalgia |
+      Schadenfreude | Jealousy | Hope} (five-way at the generator's
+      rim).
+    - 8-way: Basic Emotions → the eight family branches (the petals);
+      the eight dyads sit as parallel siblings within The Blends.
+  Convergences:
+    - The Low Road + The High Road + The Old Road → Limbic System
+      (generator; 3-way — the roads of the senses meet).
+    - Flashbulb + Fear Conditioning + Pituitary → Somatic Marker
+      (3-way).
+    - Noradrenaline + Cortisol → Arousal (the fast alarm and the slow
+      drum).
+    - Valence + Arousal → THE OPEN SMILE (generator; 2-way — the axes
+      of feeling produce the first message: the event's seam).
+    - Duchenne Smile + The Social Smile → The Facial Grammar
+      (generator; 2-way — felt and sent converge into one atlas).
+    - Microexpressions + Gaze + Tone of Voice → Basic Emotions
+      (generator; 3-way).
+    - Six families → The Six Universals (6-way — the fan closes).
+    - The Six Universals + Laughter + Tears → Darwin trophy (3-way).
+    - THE EIGHT DYADS (each a 2-way convergence from Generator 6's
+      petals — the wheel's geometry as wiring): Joy + Trust → Love;
+      Fear + Surprise → Awe; Anticipation + Joy → Optimism; Trust +
+      Fear → Submission; Surprise + Sadness → Disapproval; Sadness +
+      Disgust → Remorse; Disgust + Anger → Contempt; Anger +
+      Anticipation → Aggressiveness.
+    - Eight dyads + Longing → The Color Wheel (9-way cap).
+    - Pride + Shame → Self-Esteem (the two verdicts of the self).
+    - Longing + The Ambivalent Heart → Grief (a CROSS-STRATUM
+      convergence: the blend stratum's love-across-absence meets the
+      mixed stratum's double grasp — grief, fed from two depths).
+    - Bittersweet + Nostalgia + Grief + Hope → The Mixed Signal
+      (4-way).
+    - Perspective Taking + Sympathetic Concern → Compassion (2-way).
+    - The Sublime + Collective Effervescence → Affective Technology
+      (generator; 2-way).
+    - Altruism + The Sublime + The Empathy Machine → Emotional
+      Intelligence (final trophy; 3-way).
+  Deliberate double-branch nodes (one predecessor, two or more
+  successors — every family petal double-branches into its wheel
+  neighbors):
+    - The Low Road → {Myelination | Limbic System gate}.
+    - Duchenne Smile → {Facial Grammar gate | Smile Loop | A Voice to
+      Smile At | Puppy Eyes}.
+    - Gaze → {Tone of Voice | The Telling Body}.
+    - Joy → {Laughter | The Six Universals | Love | Optimism} (4-way —
+      the wheel's happiest intersection).
+    - Fear → {Fight-or-Flight | The Six Universals | Submission |
+      Awe}; Sadness → {Tears | The Six Universals | Disapproval |
+      Remorse} (the busiest nodes of the fan, by design).
+    - Love → {Longing | The Color Wheel}.
+    - Altruism → {The Cultural Heart gate | final trophy}.
+    - The Sublime → {Affective Technology gate | final trophy}.
+
+3c.6 CONTENT-FLEXIBILITY NOTES (avoiding the template trap)
+  - The tree is NOT a uniform "generator + 5 nodes, repeat" pattern: the
+    seam generator (The Open Smile) is compact and warm; the hub
+    (Basic Emotions) is a 12-node fan; The Blends is fed by eight
+    two-way convergences; the final generator is a nearly straight
+    lane. No two strata share a shape.
+  - Terminal nodes are distributed by design (Pain Reflex, Myelination,
+    Papez Circuit, Endorphins, The Second Brain, Smile Loop, A Voice to
+    Smile At, Puppy Eyes, Contagious Smile, Botox, Ten Thousand Faces,
+    The Telling Body, Fight-or-Flight, Guilt, Embarrassment, The Blush,
+    Schadenfreude, Envy, Jealousy, Empathy in Animals, The Empath's
+    Wound, Cave Art, The 176 Emoji, Mood Sensors, Emotion Recognition):
+    real trees need terminal boosts; not every node must gate
+    something.
+  - The four tap nodes give the Miscellaneous Effects section a real
+    arc (feel the world → feel the body → send and receive → feel about
+    feeling), not a boilerplate tap node; two of the four unlock from
+    research nodes (The Answered Smile, Meta-Emotion) rather than from
+    generators — a deliberate cross-type connection, each telling one
+    story across two node types.
+  - Grief's cross-stratum convergence (fed from both Longing and its
+    own generator) is the single most unusual wiring in the tree, and
+    it is content-argued: grief is the only emotion that is
+    simultaneously a blend (love across absence) and a mixed state
+    (pain and warmth at once). The wiring IS the finding.
+  - If playtesting demands a longer or shorter run, the natural trim
+    points are: Envy and The Empath's Wound (cut to terminal-ize),
+    The Ten Thousand Faces and The 176 Emoji (pure flavor terminals),
+    and — on the extension side — a fourth family extension chain
+    (Anticipation → Craving → Addiction Loop) and a Trust →
+    Institutional Trust chain feeding Funeral Rites. The deep strata
+    should never be trimmed: the complexity ladder is the event.
+================================================================================
+4. OBJECTIVES & BADGES
+================================================================================
+
+4.1 OBJECTIVES — "EXPLORE EMOTION" (15 requirements)
+--------------------------------------------------------------------------------
+Format follows the wiki convention ("Collect X, Y → reward"). Objective
+placement is tuned to the tree's natural pacing: Augmentations Consoles
+early and often, badges at the three act-marks (the birth of Expression,
+the Darwin turn into the deep layer, the finale). The fifteen steps walk
+the player down the entire tear — surface, bloom, deep water, point.
+
+  Explore Emotion (15 Requirements)
+
+  01. Collect 10 Nerve Impulse, The Stimulus
+      → 1 Augmentations Console
+  02. Collect Sensation, Synaptic Gap, Thalamus
+      → 2 Augmentations Console
+  03. Collect 5 Limbic System, Amygdala, Hippocampus
+      → 3 Augmentations Console
+  04. Collect Dopamine, Serotonin, Oxytocin, Endorphins, Cortisol
+      → 4 Augmentations Console
+  05. Collect Valence, Arousal, 10 The Open Smile
+      → THE FELT BODY BADGE (Bronze)
+  06. Collect Duchenne Smile, The Social Smile, The Answered Smile,
+      The Echo
+      → 5 Augmentations Console
+  07. Collect 5 The Facial Grammar, Facial Action Coding,
+      Microexpressions
+      → 6 Augmentations Console
+  08. Collect Fear, Anger, Joy, Sadness, Disgust, Surprise,
+      Anticipation, Trust
+      → 7 Augmentations Console
+  09. Collect The Six Universals, Laughter, Tears, The Expression of
+      the Emotions in Man and Animals
+      → THE SPEAKING FACE BADGE (Silver)
+  10. Collect Love, Awe, 5 The Blends, The Color Wheel
+      → 8 Augmentations Console
+  11. Collect Self-Recognition, Shame, Guilt, Pride, Meta-Emotion,
+      The Second Feeling
+      → 9 Augmentations Console
+  12. Collect Bittersweet, Nostalgia, Grief, Hope, The Mixed Signal
+      → 10 Augmentations Console
+  13. Collect Mirror Neurons, Compassion, Altruism, The Empath's Wound
+      → 11 Augmentations Console
+  14. Collect 5 The Cultural Heart, Funeral Rites, Music of Feeling,
+      The Sublime, Collective Effervescence
+      → 12 Augmentations Console
+  15. Collect Affective Computing, The Empathy Machine, Emotional
+      Intelligence
+      → THE CONNECTED HEART BADGE (Gold)
+
+Pacing intent: objectives 01-05 carry the player through the entire inner
+layer and award the Bronze badge exactly at the Open Smile — the moment
+the first new economy is born; 06-09 cover the bloom and award Silver at
+the Darwin turn — the moment the third economy begins; 10-15 walk the six
+deep strata, one objective per stratum, and award Gold only at the final
+trophy. The badge cadence (1 in 5, then 1 in 4, then 1 in 6) mirrors the
+acts' lengths: fast surface, bright bloom, long descent.
+
+4.2 BADGES (3, standard exploration badge rules)
+--------------------------------------------------------------------------------
+Each badge speeds up every simulation in the game by 1% and boosts
+production in future runs of THIS event by 5% / 10% / 15% respectively
+(Bronze / Silver / Gold). Badge speed effects stack additively across all
+explorations, per the global badge rule.
+
+  BRONZE — THE FELT BODY
+  "Signal becomes state. The body no longer merely reacts — it feels.
+  Hunger, dread, warmth, want: the first inner weather, older than words,
+  and shared with every mammal that ever shivered."
+
+  SILVER — THE SPEAKING FACE
+  "What is felt inside can now be shown — and seen. A baby's first aimed
+  smile, the crinkle of a true one, the flash of a hidden truth, the
+  grief in a stranger's voice: emotion has become a language, and every
+  face is fluent."
+
+  GOLD — THE CONNECTED HEART
+  "From one nerve's spark to networks of shared feeling — across faces,
+  selves, cultures, and now machines. The deepest emotions turned out to
+  be compositions: love, grief, awe — feelings made of other feelings,
+  the way colors are made of light. Emotion was never noise in the
+  system. It was the reason the system runs."
+
+4.3 CHALLENGE MODE & LEADERBOARD (standard mechanics, restated for this event)
+--------------------------------------------------------------------------------
+  - After all upgrades are purchased, the CHALLENGE button appears:
+    progress resets, Logits / Science / Badges are kept. Each challenge
+    level grants bonus Science and raises production costs (the standing
+    curve: L2 x2 cost / x4 gains scaling, per level).
+  - Science scoring: +1 per generator purchased, +5 per upgrade, +1/+3
+    per free/paid quantum charge, plus challenge-quest Science.
+  - Leaderboard divisions and end-of-event rewards follow the standard
+    exploration reward table (Top 10 through Participant).
+  - A challenge variant worth playtesting for THIS event only: one
+    deep-layer dyad per run is amplified (a "mood of the run" modifier —
+    e.g., Love's chain at x3 for that run). The dyad convergence wiring
+    already supports the pick.
+
+================================================================================
+5. CONCLUSION
+================================================================================
+
+WHY THIS DESIGN IS FAITHFUL TO THE GAME
+  The event reproduces the real grammar of Cell to Singularity
+  explorations rather than inventing a new one: a starter tap node with
+  successors (The Campfire / Invisible Force pattern); per-generator
+  "Efficiency" upgrade sections; a Miscellaneous Effects section with
+  four tap nodes; 12 objectives plus badge markers inside the observed
+  objective style; three badges with the canonical 1% / 5-10-15% effects;
+  Challenge mode and Science/leaderboard untouched; Semblance opening,
+  ending, and in-tree dialogues exactly as Mind Machines established.
+  What is deliberately pushed is SCALE: 12 generators and 109 nodes make
+  this the largest exploration in the game's history — a flagship above
+  the observed 3-10 / 43-67 band, sized to this brief's explicit demand
+  for more generators, more upgrades, and a longer, deeper tree. The
+  grammar is standard; only the cathedral is bigger.
+  The currency count is likewise a first: three economies where past
+  events ran one or two (or transformed one into another, as Mind
+  Machines did). The precedent for economy-experimentation exists, and
+  the three-currency chain follows the game's own refinement logic —
+  Tea Leaves to Tea Cups, Music Notes to Songs, Circuits to Nodes —
+  extended one step further than any prior event dared: the raw
+  material (Sensations), the first refinement (Expressions), and the
+  final product (Emotions — the event's own name, earned last).
+
+WHY IT IS FAITHFUL TO THE CONTENT
+  Emotion science itself supplied every load-bearing decision:
+  - The infant's first social smile — a real, datable event (~6 weeks)
+    — is the seam: the first generator of the Expression currency,
+    unlocked where Valence and Arousal (the two real axes of affect)
+    converge. The user-specified placement of The Open Smile is
+    therefore not an economy convenience but a content citation.
+  - Plutchik's dyad rules — joy + trust = love, fear + surprise = awe —
+    are implemented as literal wiring: each of the eight dyad nodes
+    converges from exactly the two Basic Emotions petals that compose
+    it. The wheel's geometry is the tree's wiring diagram.
+  - The complexity ladder of the deep layer (blend → self → ambivalence
+    → other → generations → machine) is the brief's "deeper is more
+    complex" requirement made structural: each stratum adds one
+    ingredient, documented in 3c.4, with the research dossier (2.6)
+    citing the science at every rung — Lewis's developmental ladder,
+    Tangney's shame/guilt split, Leunissen's measured nostalgia,
+    continuing-bonds grief, Kaminski's AU101, Gallup's mirror.
+  - The shape is a falling tear because the tear is the only expression
+    that is also a feeling — the moment the event's currencies visibly
+    become one another; the depth of the shape carries the theme
+    (weather at the crown, ocean at the point).
+  - The event's science is current with the field (Ekman through
+    Barrett, the universality debate included, animal empathy and
+    affective computing represented), and its ending lands the theme
+    the game has been quietly building since Mind Machines: an
+    artificial mind asking what feeling is, and discovering that
+    asking IS one.
+
+BALANCE SUMMARY
+  - Early game: fast (8 upgrades + two tap nodes on the cheapest
+    currency; x3 opening multipliers).
+  - First transition: tender (The Open Smile bootstraps Expressions
+    with x3 on the Duchenne Smile; the Bronze badge arrives with the
+    baby's first message).
+  - Mid game: the widest playground (the eight-family fan; the Darwin
+    trophy gives x4 and the third economy; Love bootstraps the deep
+    water).
+  - Late game: a controlled marathon (the current generator capped at
+    x2-x2.25; six convergent gates pacing the descent; the final
+    trophy's x4 rewarding all six deep generators at once).
+  - The two trophies mark the only two moments the content truly
+    demands a fanfare (the composition pivot and the finale); every
+    other milestone — including the birth of Expression itself — is
+    carried by ordinary nodes, the seam most tender of all.
+
+NATURAL FOLLOW-UPS (if the event returns or earns a sequel)
+  - A future exploration on DREAMS or MEMORY would chain naturally from
+    the hippocampus and amygdala nodes here — the tree's own memory
+    pair is already a convergent set.
+  - The "mood of the run" challenge modifier (4.3) is the replayability
+    hook the dyad wiring was built to support.
+  - The wheel's secondary and tertiary dyads (pride, hope, anxiety,
+    spite) are a ready-made second layer for a returning edition — the
+    tree can literally mix one ring deeper.
+  - Semblance's closing line ("I have decided not to optimize that
+    away") is a deliberate story hook for a future Mind Machines sequel
+    event, where the empathy machines and she finally meet.
+
+================================================================================
+   END OF EVENT SCRIPT — EMOTION: THE WEATHER WITHIN
+   (Revised & Expanded Edition: 3 currencies · 12 generators · 109 nodes)
+================================================================================

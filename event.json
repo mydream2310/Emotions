@@ -1,0 +1,4745 @@
+{
+  "name": "Emotion",
+  "title": "Emotion",
+  "startNode": "1",
+  "gridView": true,
+  "nodes": [
+    {
+      "uid": "1",
+      "title": "The Stimulus",
+      "description": "A change in the world — a sound, a sight, a touch, a word — that disturbs the body's calm and demands an answer. Every emotion ever felt began exactly here: with something felt.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [],
+      "effects": [],
+      "category": "generator",
+      "posX": 0,
+      "posY": 0,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": "Sensations",
+      "produces": 0
+    },
+    {
+      "uid": "1.1",
+      "title": "Nerve Impulse",
+      "description": "A spark of voltage racing along a neuron. Before anything is felt, it must first be signaled — the body's fastest language, carrying news of the world toward the brain at the speed of a sprinting cheetah.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [],
+      "category": "generator",
+      "posX": 0,
+      "posY": -40,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": "Sensations",
+      "produces": 0
+    },
+    {
+      "uid": "1.2",
+      "title": "Sensation",
+      "description": "The raw data of feeling: warmth, pressure, pain, pleasure. Sensation is the body's first draft of emotion — written before a single word of it is understood.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "1.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "1.1",
+          "value": 3
+        }
+      ],
+      "category": "research",
+      "posX": 0,
+      "posY": -80,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "1.3",
+      "title": "Pain Reflex",
+      "description": "The hand withdraws from the flame before the brain even knows it burns. The spinal cord closes the loop alone — feeling arrives late to its own rescue, and the reflex is celebrated for it.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "1.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "1.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -60,
+      "posY": -120,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "1.4",
+      "title": "Synaptic Gap",
+      "description": "Between two neurons lies a canyon twenty-billionths of a meter wide. Molecules leap across it carrying the message onward. Feeling, at its root, is chemistry in transit.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "1.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "1.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": 60,
+      "posY": -120,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "1.5",
+      "title": "Thalamus",
+      "description": "The brain's relay station. Every signal of the senses passes through this grand central station before fanning outward — one platform, all arrivals, except a single ancient passenger that never stops here at all.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "1.4",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "1.1",
+          "value": 3
+        }
+      ],
+      "category": "research",
+      "posX": 60,
+      "posY": -160,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "1.6",
+      "title": "The Low Road",
+      "description": "The shortcut from thalamus to amygdala — a tenth of a second of blurry, life-saving fear. Better to mistake a stick for a snake ten times than a snake for a stick once.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "1.5",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "1.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": -60,
+      "posY": -200,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "1.7",
+      "title": "The High Road",
+      "description": "The longer path through the sensory cortex, where the signal is thought about before it is felt. Slower, but wiser — the beginning of feeling that knows what it is feeling.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "1.5",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "1.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": 60,
+      "posY": -200,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "1.8",
+      "title": "The Old Road",
+      "description": "Scent takes the ancient back way — from the nose almost directly to the centers of memory and feeling, skipping the relay entirely. It is why a perfume can ambush a decade, and why this is the only signal in the tree that never bought a ticket at the station above.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "1.5",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "1.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": 180,
+      "posY": -200,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "1.9",
+      "title": "Myelination",
+      "description": "Fatty sheaths wrap the longest nerves, letting signals leap between gaps at up to a hundred meters per second. Evolution insulates the paths feeling travels most.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "1.6",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "1.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -140,
+      "posY": -240,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "1.10",
+      "title": "Interoception",
+      "description": "The body's hidden sense — the feeling of your own heartbeat, breath, and gut. Everything the mind will later name as emotion is first noticed here, as weather inside the body.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [],
+      "category": "generator",
+      "posX": -80,
+      "posY": -40,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": "Sensations",
+      "produces": 0
+    },
+    {
+      "uid": "2.1",
+      "title": "Limbic System",
+      "description": "An ancient ring of tissue wrapped around the brainstem — the amygdala's alarm, the hippocampus' archive, the hypothalamus' commands. Here, signals finally become states: the body begins to CARE what happens to it.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "1.6",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "1.7",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "1.8",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [],
+      "category": "generator",
+      "posX": 60,
+      "posY": -280,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": "Sensations",
+      "produces": 0
+    },
+    {
+      "uid": "2.2",
+      "title": "Amygdala",
+      "description": "An almond-shaped watchtower in each temporal lobe. It tags experience with significance — this matters, remember this, fear this. It is why you remember where you stood when the news came.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "2.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "2.1",
+          "value": 3
+        }
+      ],
+      "category": "research",
+      "posX": 60,
+      "posY": -320,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "2.3",
+      "title": "Hippocampus",
+      "description": "The archivist of experience. What the amygdala marks, the hippocampus keeps — emotion and memory are locked together like keyhole and key.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "2.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "2.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -30,
+      "posY": -360,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "2.4",
+      "title": "Hypothalamus",
+      "description": "The chemical switchboard below the brain: heartbeat, sweat, blush, freeze. When emotion moves the body, this is the hand on the lever.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "2.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "2.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": 60,
+      "posY": -360,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "2.5",
+      "title": "Papez Circuit",
+      "description": "In 1937, James Papez drew a loop through the brain — thalamus to cingulate to hippocampus to hypothalamus and back — and proposed it as THE machine of emotion. MacLean folded the loop into the limbic ring. The circuit was wrong in its details and immortal in its idea: feeling is a CIRCLE, not a spot.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "2.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "2.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": 150,
+      "posY": -360,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "2.6",
+      "title": "Flashbulb Memory",
+      "description": "Where were you when it happened? Some moments are seared whole — light, sound, place — because the amygdala ordered them saved in a single exposure. The mind's photograph of feeling's loudest day.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "2.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "2.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": -100,
+      "posY": -400,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "2.7",
+      "title": "Fear Conditioning",
+      "description": "Pair a neutral tone with a shock once, and the tone alone will freeze an animal forever after. In 1920, little Albert learned to fear a white rat in a single afternoon. The amygdala learns danger in one trial — because in the wild, there is rarely a second one.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "2.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "2.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": -20,
+      "posY": -400,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "2.8",
+      "title": "Pituitary Gland",
+      "description": "A pea-sized conductor hanging beneath the brain. On the hypothalamus' command, it pours the hormones of stress and love into the blood — feeling, broadcast body-wide, by chemistry.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "2.4",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "2.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": 60,
+      "posY": -400,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "2.9",
+      "title": "Somatic Marker",
+      "description": "António Damasio's insight: the body marks every option with a feeling — a gut sense of right or wrong — before reason has begun its arithmetic. Emotion is not the enemy of decision. It is the compass of it.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "2.6",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "2.7",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "2.8",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "2.1",
+          "value": 3.5
+        }
+      ],
+      "category": "research",
+      "posX": -20,
+      "posY": -440,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "3.1",
+      "title": "Neurochemical Flow",
+      "description": "The molecular messengers of mood — dopamine, serotonin, oxytocin, endorphins, noradrenaline, cortisol — dissolving across trillions of synapses. Here feeling becomes chemistry: wanting, calming, bonding, soothing, alerting, enduring.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "2.9",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [],
+      "category": "generator",
+      "posX": -20,
+      "posY": -480,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": "Sensations",
+      "produces": 0
+    },
+    {
+      "uid": "3.2",
+      "title": "Dopamine",
+      "description": "The molecule of wanting, not of having. It surges on the way to the reward — the anticipation, the pursuit, the almost — teaching the brain to seek again. It is why the journey thrills more than the arrival.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "3.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "3.1",
+          "value": 3
+        }
+      ],
+      "category": "research",
+      "posX": -20,
+      "posY": -520,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "3.3",
+      "title": "Reward Pathway",
+      "description": "In 1954, rats given a lever that stimulated this circuit pressed it thousands of times — preferring pure wanting to food and water. The mesolimbic pathway is the engine of motivation, ambition, and addiction: the SEEKING system Panksepp named the engine of the mammalian mind.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "3.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "3.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -20,
+      "posY": -560,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "3.4",
+      "title": "Serotonin",
+      "description": "The mood-steadying molecule of contentment and satiety. Curiously, some ninety percent of the body's supply is made not in the brain but in the gut — contentment is cooked in the belly and shipped upstairs.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "3.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "3.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": -140,
+      "posY": -600,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "3.5",
+      "title": "Oxytocin",
+      "description": "The molecule of closeness — released in touch, in trust, in birth and breastfeeding. It bonds mother to infant, friend to friend, and makes a hug into medicine.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "3.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "3.1",
+          "value": 3
+        }
+      ],
+      "category": "research",
+      "posX": -40,
+      "posY": -600,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "3.6",
+      "title": "Noradrenaline",
+      "description": "The brain-wide alertness signal — the volume knob of waking. It turns calm morning fog into thundering focus in a heartbeat. Every alarm you have ever felt was carried on this molecule.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "3.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "3.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": 60,
+      "posY": -600,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "3.7",
+      "title": "Cortisol",
+      "description": "The slow stress molecule. Adrenaline is the fire alarm; cortisol is the smoking aftermath — hours of mobilization, carved memories, a body preparing for a siege. The tax the modern world pays for a stone-age alarm system.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "3.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "3.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": 160,
+      "posY": -600,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "3.8",
+      "title": "Endorphins",
+      "description": "The body's own morphine — released in pain, in laughter, and in the runner's second wind. Pleasure with ancient roots in endurance: the reward for surviving the long chase.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "3.5",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "3.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -40,
+      "posY": -640,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "3.9",
+      "title": "The Second Brain",
+      "description": "Half a billion neurons line the gut — a nervous system large enough to earn the name second brain, and the true source of the body's serotonin. The stomach keeps its own counsel, and mood listens to it: butterflies, hunches, and gut feelings are its dispatches.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "3.4",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "3.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": -140,
+      "posY": -640,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "3.10",
+      "title": "Valence",
+      "description": "The first axis of all feeling: pleasant or unpleasant. Every emotion that will ever exist can be placed somewhere between allure and revulsion. The positive pole of this axis is where the next act of the tree begins — with a smile.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "3.4",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "3.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": -220,
+      "posY": -640,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "3.11",
+      "title": "Arousal",
+      "description": "The second axis: how loudly the body sounds its alarm — from flat sleep to full thunder. Together with valence, the two axes draw the map on which every named emotion is a country.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "3.6",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "3.7",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "3.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": 110,
+      "posY": -640,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "4.1",
+      "title": "The Open Smile",
+      "description": "At six weeks old, a baby looks at its mother's face and — for the first time on purpose — smiles back. Not gas, not reflex: a message, sent to one particular mind, expecting an answer. Feeling has become signal. The Expression economy begins here, at the positive pole of the feeling map, with the warmest transaction in biology.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "3.10",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "3.11",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [],
+      "category": "generator",
+      "posX": -60,
+      "posY": -720,
+      "posZ": 0,
+      "costCurrency": "Sensations",
+      "cost": 0,
+      "producesCurrency": "Expressions",
+      "produces": 0
+    },
+    {
+      "uid": "4.2",
+      "title": "Duchenne Smile",
+      "description": "The true smile: the mouth's pull PLUS the involuntary crinkle of the eyes' outer muscles. Duchenne mapped it with electrodes in 1862, and Darwin kept the photograph as his favorite plate. A smile without the eyes is a courtesy; with them, it is joy confessed.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "4.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "4.1",
+          "value": 3
+        }
+      ],
+      "category": "research",
+      "posX": -120,
+      "posY": -760,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "4.3",
+      "title": "The Social Smile",
+      "description": "The learned smile: mouth alone, eyes quiet. It greets, it appeases, it photographed your school portrait. Two smiles live in every face — the one that happens to you, and the one you send — and a whole science exists to tell them apart.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "4.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "4.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": 0,
+      "posY": -760,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "4.4",
+      "title": "The Smile Loop",
+      "description": "The traffic runs both ways: hold a smile and the feeling is nudged to follow — the face is not feeling's billboard, but its participant. The pen-in-teeth experiments argue about the effect's size; nobody argues the direction.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "4.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "4.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": -180,
+      "posY": -800,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "4.5",
+      "title": "The Contagious Smile",
+      "description": "A smile ripples down a table faster than the joke that started it. Faces answer faces before words are consulted — the oldest social network, running on its oldest protocol.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "4.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "4.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": 0,
+      "posY": -800,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "4.6",
+      "title": "The Answered Smile",
+      "description": "Attachment theory in one node: the smile sent, the smile returned, the bond begun. Bowlby and Ainsworth built a century of developmental science on this exchange — the answered smile, repeated ten thousand times, becomes the secure base from which a child explores the world. Every relationship you have ever had is an echo of the first one.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "4.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "4.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": 60,
+      "posY": -800,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "4.7",
+      "title": "A Voice to Smile At",
+      "description": "Infants blind from birth smile at the sound of a voice, on the same schedule as sighted babies. The social smile is no imitation seen in a mirror — it is innate, waiting only for a partner. The signal was in the species before the sight of it was.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "4.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "4.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": -120,
+      "posY": -800,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "4.8",
+      "title": "The Puppy Eyes",
+      "description": "In 2019, anatomists found that dogs possess a dedicated inner-brow muscle that wolves mostly lack — evolved after domestication to lift the brows, widen the eyes, and aim the look straight at human hearts. An expression muscle bred by friendship: the grammar of the face, edited by ten thousand years of us.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "4.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "4.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": -60,
+      "posY": -800,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "4.9",
+      "title": "The Echo",
+      "description": "A smile sent is a smile returned. The smallest unit of every relationship ever built: signal, answer, bond. In the expression era, every tap is a message — and this node is the reply.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "4.6",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [],
+      "category": "generator",
+      "posX": 120,
+      "posY": -840,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": "Expressions",
+      "produces": 0
+    },
+    {
+      "uid": "5.1",
+      "title": "The Facial Grammar",
+      "description": "Forty-three muscles beneath the skin, woven into thousands of readable configurations. The human face is the most expressive surface in the living world — a billboard that cannot stop broadcasting, speaking a grammar older than every language it outlived.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "4.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "4.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [],
+      "category": "generator",
+      "posX": -60,
+      "posY": -880,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": "Expressions",
+      "produces": 0
+    },
+    {
+      "uid": "5.2",
+      "title": "The Forty-Three Muscles",
+      "description": "The instrument itself: forty-three muscles under the skin, more than any limb owns, pulling the face into thousands of shapes. Evolution spent its budget on the face the way it spent its budget on the brain — lavishly, and for company.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "5.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "5.1",
+          "value": 3
+        }
+      ],
+      "category": "research",
+      "posX": -120,
+      "posY": -920,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "5.3",
+      "title": "Facial Action Coding",
+      "description": "Ekman and Friesen's atlas of the face: every visible expression decomposed into forty-four action units, each a muscle's signature. The grammar that let science — and later machines — read the face like a sentence.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "5.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "5.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -180,
+      "posY": -960,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "5.4",
+      "title": "Microexpressions",
+      "description": "In a twentieth of a second, the face flashes a truth the words deny — then swallows it back. Leak detection for the human heart: too fast to fake, too brief to hide.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "5.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "5.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": -180,
+      "posY": -1000,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "5.5",
+      "title": "The Botox Experiment",
+      "description": "Paralyze the frown muscles, and sad sentences become slower to read. The 2010 experiments proved the traffic runs BOTH ways: the face is not feeling's billboard — it is feeling's participant. Embodiment, in a syringe.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "5.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "5.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": -240,
+      "posY": -1000,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "5.6",
+      "title": "The Ten Thousand Faces",
+      "description": "The combinatorial space of the face: forty-three muscles, thousands of lawful combinations — more distinct expressions than there are words for feelings. The face can say things no dictionary has ever caught.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "5.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "5.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": -120,
+      "posY": -960,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "5.7",
+      "title": "Gaze",
+      "description": "Human eyes alone show their whites, making the direction of attention readable across a firelit circle. The cooperative-eye hypothesis: a glance became a sentence — follow my eyes — before speech ever was.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "5.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "5.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": 0,
+      "posY": -920,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "5.8",
+      "title": "Tone of Voice",
+      "description": "Prosody — the melody of speech. You can hear grief in a language you do not speak, because the voice carries feeling beneath the words, on a channel older than grammar.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "5.7",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "5.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": 60,
+      "posY": -960,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "5.9",
+      "title": "The Telling Body",
+      "description": "Beneath the telling face, the telling body: shoulders that curl to guard a wound, arms that open to welcome, a stride that broadcasts a mood. The face is the headline; the body is the article.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "5.7",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "5.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": 0,
+      "posY": -960,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "6.1",
+      "title": "Basic Emotions",
+      "description": "The eight great states of feeling — fear, anger, joy, sadness, disgust, surprise, anticipation, trust — each with an ancient survival job and a face every culture can read. Plutchik drew them as a wheel of eight petals; this generator is that wheel, blooming.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "5.4",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "5.7",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "5.8",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [],
+      "category": "generator",
+      "posX": -40,
+      "posY": -1080,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": "Expressions",
+      "produces": 0
+    },
+    {
+      "uid": "6.2",
+      "title": "Fear",
+      "description": "The oldest compass: away. It empties the blood from the face, stills the body, and lends wings to the legs. Fear's whole curriculum fits in one lesson — survive now, understand later.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "6.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": -130,
+      "posY": -1120,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "6.3",
+      "title": "Anger",
+      "description": "The defense of what matters: a border drawn by the face's bared teeth and the blood that floods into the hands. Darwin traced it to the snarl of a challenged ape; every law of civilization is anger's negotiated surrender.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "6.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": 110,
+      "posY": -1120,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "6.4",
+      "title": "Joy",
+      "description": "The body's YES: lightened step, widened eyes, a smile the cheeks cannot hold. Joy is evolution's reward receipt — proof that something worth repeating just happened.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "6.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": -250,
+      "posY": -1120,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "6.5",
+      "title": "Sadness",
+      "description": "The slow tax of loss: heavy limbs, downcast eyes, a mind turned inward. Yet sadness is not failure — it withdraws energy from what is gone, and signals to everyone watching: I need support.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "6.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": -10,
+      "posY": -1120,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "6.6",
+      "title": "Disgust",
+      "description": "Born in the mouth's rejection of spoiled food, grown into the rejection of cruelty and betrayal. Disgust keeps the body clean — and, when culture borrows it, keeps the conscience.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "6.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": 50,
+      "posY": -1120,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "6.7",
+      "title": "Surprise",
+      "description": "The interrupt signal: brows high, eyes wide, jaw slack — the face clearing its cache to make room for the unexpected. A fraction of a second of stillness, then fear, or joy, or wonder takes over.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "6.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": -70,
+      "posY": -1120,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "6.8",
+      "title": "Anticipation",
+      "description": "The forward-leaning feeling: dopamine's promise, the night before the feast, the held breath before the answer. Plutchik placed it opposite surprise — expectation facing the unexpected.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "6.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": 170,
+      "posY": -1120,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "6.9",
+      "title": "Trust",
+      "description": "The feeling that lowers the guard: shared meals, exposed necks, an arm given for balance. Trust is the mortar of every bond — Plutchik's quiet eighth petal, opposite disgust.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "6.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": -190,
+      "posY": -1120,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "6.10",
+      "title": "Fight-or-Flight",
+      "description": "Fear's full-body mobilization: the blood shunted to the limbs, the digestion paused, the pupil dilated to take in every photon of the threat. Cannon named it in 1915; every heartbeat in every emergency since has obeyed it.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "6.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -130,
+      "posY": -1160,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "6.11",
+      "title": "Laughter",
+      "description": "Joy made audible: rhythmic exhalation older than language and shared with tickled rats. A laugh is a broadcast that all is well — and, in a crowd, an invitation to agree.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.4",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "6.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -250,
+      "posY": -1160,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "6.12",
+      "title": "Tears",
+      "description": "Humans alone weep for feeling. The tear ducts answer to the limbic command that also spikes the breath — grief, overwhelm, relief, joy pushed past words. A signal visible across a room and across every culture.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.5",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "6.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -10,
+      "posY": -1160,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "6.13",
+      "title": "The Six Universals",
+      "description": "In the highlands of Papua New Guinea, people who had never met an outsider still recognized happiness, sadness, fear, anger, surprise, and disgust in a stranger's photographs. Ekman's finding split a century of argument: six faces, read by every culture ever studied — though today's scientists still debate whether the faces are nature's grammar or culture's handwriting. The wheel still turns.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "6.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "6.4",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "6.5",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "6.6",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "6.7",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "6.1",
+          "value": 3
+        }
+      ],
+      "category": "research",
+      "posX": -50,
+      "posY": -1200,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "6.14",
+      "title": "The Expression of the Emotions in Man and Animals",
+      "description": "In 1872, Darwin published his third great work: proof that humans and animals share the grammar of expression — the bared teeth of rage, the drooping of grief, the play-face of joy — and his first map of the feelings that blend beyond it. His book turned feeling inside out and then kept going: everything shown in this tree's bright water is, from this page forward, free to COMBINE.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.13",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "6.11",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "6.12",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "6.1",
+          "value": 4
+        }
+      ],
+      "category": "trophy",
+      "posX": -100,
+      "posY": -1240,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "7.1",
+      "title": "The Blends",
+      "description": "Where two petals of the wheel overlap, a new feeling is born: joy over trust becomes love; fear touching surprise becomes awe. The complex emotions are compositions, the way colors are made of light — and this generator is where feeling learns to mix. The deep water of the event starts here, and its first currency is the event's own name: Emotions.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.14",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [],
+      "category": "generator",
+      "posX": -100,
+      "posY": -1280,
+      "posZ": 0,
+      "costCurrency": "Expressions",
+      "cost": 0,
+      "producesCurrency": "Emotions",
+      "produces": 0
+    },
+    {
+      "uid": "7.2",
+      "title": "Love",
+      "description": "Joy over trust: the first blend, and the reason for most of the rest. Attachment science reads it as a braid — joy at the beloved's presence, trust in their return, fear of their loss — braided so tightly the strands forget they were ever separate. Every bond you have ever kept is a cathedral built inside this overlap.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.4",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "6.9",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "7.1",
+          "value": 3
+        }
+      ],
+      "category": "research",
+      "posX": -220,
+      "posY": -1360,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "7.3",
+      "title": "Awe",
+      "description": "Fear touching surprise: the emotion of the vast — mountains, storms, the starry sky, a cathedral's vault. Keltner and Haidt define it by vastness plus accommodation: the world too large for the current self, and the self obliged to grow. The feeling that sends humans toward mountains, mathematics, and gods.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "6.7",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "7.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -100,
+      "posY": -1360,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "7.4",
+      "title": "Optimism",
+      "description": "Anticipation leaning into joy: the forward-looking blend. Expectation is neutral; optimism loads it with light. It measurably correlates with persistence — the feeling that keeps a species planting in winter.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.8",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "6.4",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "7.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": 230,
+      "posY": -1360,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "7.5",
+      "title": "Submission",
+      "description": "Trust under fear: the calm of yielding — the wolf offering its throat, the believer bowing the head. Plutchik's third dyad is the emotion of hierarchies and surrenders: the peace that comes from handing the watch to another.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.9",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "6.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "7.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": -160,
+      "posY": -1360,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "7.6",
+      "title": "Disapproval",
+      "description": "Surprise curdling into sadness: the letdown face — the raised brows of the unexpected falling into the lowered lids of disappointment. The smallest of the dyads, and the most daily: every unmet expectation wears it for a moment.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.7",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "6.5",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "7.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": -40,
+      "posY": -1360,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "7.7",
+      "title": "Remorse",
+      "description": "Sadness soured by self-directed disgust: the self-reproach of the morning after. Remorse is the dyad that points inward — the first feeling in the tree to aim at its own owner, and therefore the natural doorway to the stratum below, where emotions learn to face the self.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.5",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "6.6",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "7.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": 20,
+      "posY": -1360,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "7.8",
+      "title": "Contempt",
+      "description": "Disgust sharpened by anger: the unilateral lip curl — the one expression known for its asymmetry. The cold blend: looking down the nose at a thing judged beneath feeling. Marriage researchers can read its presence in a three-minute argument and forecast the decade.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.6",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "6.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "7.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": 80,
+      "posY": -1360,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "7.9",
+      "title": "Aggressiveness",
+      "description": "Anger aimed forward by anticipation: the blend of the charge — intent weaponized into motion. In Plutchik's survival grammar it is the emotion of the hunt and the defense of territory; in the human repertoire, the feeling sports federations referee.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "6.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "6.8",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "7.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": 140,
+      "posY": -1360,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "7.10",
+      "title": "Longing",
+      "description": "Love across absence: desire stretched over distance or time, sweet and aching at once. Longing is love taught to wait — the bridge between the blends and the ambivalent feelings below, where sweetness and ache learn to arrive together.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "7.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "7.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -220,
+      "posY": -1400,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "7.11",
+      "title": "The Color Wheel",
+      "description": "Plutchik's finished map: eight primaries, four bipolar pairs, three intensity grades each, and combining rules running outward — primary dyads, then secondary, then tertiary, feelings blending like light the further they travel from their sources. No chart has ever tried to hold more of the heart on one page; no chart has ever fully succeeded. The wheel turns.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "7.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "7.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "7.4",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "7.5",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "7.6",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "7.7",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "7.8",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "7.9",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "7.10",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "7.1",
+          "value": 3
+        }
+      ],
+      "category": "research",
+      "posX": -30,
+      "posY": -1440,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "8.1",
+      "title": "The Self-Conscious",
+      "description": "At about eighteen months, a child before a mirror touches the paint dab on its own nose instead of the glass — and the observed self is born. Immediately, a new class of feelings arrives: emotions that require someone to be ashamed, proud, guilty, embarrassed — an audience that is also the actor. Feeling turns to face its own owner.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "7.11",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [],
+      "category": "generator",
+      "posX": -30,
+      "posY": -1480,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": "Emotions",
+      "produces": 0
+    },
+    {
+      "uid": "8.2",
+      "title": "Self-Recognition",
+      "description": "Gallup's 1970 mirror test: mark an anesthetized chimp with odorless dye, wake it, offer a mirror — and it touches its OWN face. Humans pass at eighteen to twenty-four months (the rouge test), the same window in which the self-conscious emotions first appear. Before the mirror, no one to be ashamed; after it, someone always watching — you.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "8.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "8.1",
+          "value": 3
+        }
+      ],
+      "category": "research",
+      "posX": -30,
+      "posY": -1520,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "8.3",
+      "title": "Shame",
+      "description": "The hide emotion: the wish to be somewhere else, anywhere, immediately — eyes down, shoulders in, stature shrunk. Tangney's distinction: shame says \"I am bad,\" the whole self on trial. It is the feeling with a flinch in its posture and a curtain in its grammar.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "8.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "8.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -110,
+      "posY": -1560,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "8.4",
+      "title": "Guilt",
+      "description": "Shame's repairable sibling: \"I DID something bad\" — the act condemned, the self intact, and the pull therefore points outward: apologize, mend, return what was taken. Guilt is the empathy-friendly half of the family: the feeling that maintains the bridges shame would burn.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "8.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "8.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -170,
+      "posY": -1600,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "8.5",
+      "title": "Pride",
+      "description": "The self expanded: chest out, chin up, arms raised — the victory display of every stadium on Earth. Tracy and Robins split it in two: authentic pride (\"I worked hard\") that motivates, and hubristic pride (\"I am superior\") that corrodes. The posture is the same; the future is not.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "8.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "8.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": -30,
+      "posY": -1560,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "8.6",
+      "title": "Embarrassment",
+      "description": "The giggling flush of the social stumble: the waved-at stranger who wasn't waving back. The mildest self-conscious emotion and the funniest — a feeling that REQUIRES other people, dissolves in solitude, and bonds the witnesses more tightly than the victim.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "8.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "8.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": 50,
+      "posY": -1560,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "8.7",
+      "title": "The Blush",
+      "description": "Darwin called it \"the most peculiar and most human of all expressions\" — a flush that requires not just an audience but an IMAGINED audience: a self, seen being seen. No other animal is known to blush. The face telling the truth about you, to others, without asking you first.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "8.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "8.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": -110,
+      "posY": -1600,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "8.8",
+      "title": "Self-Esteem",
+      "description": "The running ledger where pride and shame are totalled — the standing answer to the standing question \"how am I doing?\" High or low, it colors every new experience before the experience arrives. The feeling about the self that precedes all feelings in the self.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "8.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "8.5",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "8.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -70,
+      "posY": -1640,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "8.9",
+      "title": "Meta-Emotion",
+      "description": "The feeling you have ABOUT a feeling: fear of your anger, pride in your courage, shame that you still grieve, joy that you can still be moved. The therapist's office is built on this node — and so is the deep layer itself: every ambivalent and blended feeling below is meta-emotion turned outward. Complexity's last prerequisite.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "8.8",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "8.1",
+          "value": 3
+        }
+      ],
+      "category": "research",
+      "posX": -70,
+      "posY": -1680,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "8.10",
+      "title": "The Second Feeling",
+      "description": "The feeling you have ABOUT a feeling — pride in your courage, shame at your envy, grief that you still grieve. Every complex emotion in the deep layer is built from one of these turned outward. This is the deepest tap in the event, and the most complex thing a tap has ever named.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "8.9",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [],
+      "category": "generator",
+      "posX": 10,
+      "posY": -1720,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": "Emotions",
+      "produces": 0
+    },
+    {
+      "uid": "9.1",
+      "title": "The Ambivalent Heart",
+      "description": "Two feelings, held at once, in tension — the mixed emotions. Neuroscience now records distinct signatures for bittersweet states, and nostalgia measurably raises positive and negative affect together. This is the stratum of feelings that refuse to pick a side: the sweet ache, the guilty giggle, the grief that is also love. Only a heart that can hold two things at once can live here — which is to say: only a grown one.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "8.9",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [],
+      "category": "generator",
+      "posX": -70,
+      "posY": -1760,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": "Emotions",
+      "produces": 0
+    },
+    {
+      "uid": "9.2",
+      "title": "Bittersweet",
+      "description": "Joy and sorrow occupying the same breath: the graduation, the wedding, the last page of the book you did not want to end. Happy tears are its signature — the smile and the tear arriving on one face, at one time, and both meaning it.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "9.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "9.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -190,
+      "posY": -1800,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "9.3",
+      "title": "Nostalgia",
+      "description": "In 1688, Dr. Hofer diagnosed it as a disease of Swiss soldiers — a deadly homesickness (nostos + algos: the pain of return). Three centuries later, the measurement arrived: nostalgia raises positive AND negative affect simultaneously. The sweet ache was never a metaphor. It is the heart's most honest arithmetic: the warmth of the remembered day, minus the day.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "9.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "9.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -130,
+      "posY": -1800,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "9.4",
+      "title": "Schadenfreude",
+      "description": "The guilty giggle at another's harmless pratfall — the emotion nobody confesses and everybody feels. Joy borrowed from another's minor misfortune: small enough to be forgivable, real enough to have a German word and a whole research literature of its own.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "9.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "9.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": -70,
+      "posY": -1800,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "9.5",
+      "title": "Jealousy",
+      "description": "The triangle emotion: love, fear of loss, and anger braided into one green-eyed knot — Shakespeare's monster that mocks the meat it feeds on. Where envy wants what another has, jealousy guards what it fears to lose. Three feelings, one wound, no exit.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "9.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "9.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -10,
+      "posY": -1800,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "9.6",
+      "title": "Envy",
+      "description": "Desire aimed at another's possession — and it forks: benign envy pulls you upward (\"I will earn that\"), malicious envy pulls the other down (\"I will spoil that\"). The same ache, two directions, and a whole ethics hiding in the fork.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "9.5",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "9.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": -10,
+      "posY": -1840,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "9.7",
+      "title": "Grief",
+      "description": "In the bereaved's own words: love with nowhere to go. Continuing-bonds research has ended the old command to \"let go\" — the bond does not close, and was never meant to. Grief carries the pain of absence and the warmth of the remembered presence at once; elephants stand vigil at the bones of their dead for the same reason. The deepest of the mixed feelings, and the most honest.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "7.10",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "9.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "9.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -160,
+      "posY": -1840,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "9.8",
+      "title": "Hope",
+      "description": "Fear and anticipation braided forward: the emotion of the possible. Snyder's psychology breaks it into pathways and will — a plan plus the engine to run it. Hope is fear that has been given a map; despair is the same braid with the map lost. On the wheel, it is optimism's anxious sibling.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "9.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "9.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": 50,
+      "posY": -1800,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "9.9",
+      "title": "The Mixed Signal",
+      "description": "The heart's final capability: two feelings held at once, without canceling — the bittersweet smile-cry, the nostalgic ache, the grief-warmth, the hope that fears. Cacioppo mapped the mind's evaluative space as two dials, not one: positive and negative can both be turned up. Ambivalence is not confusion. It is capacity.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "9.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "9.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "9.7",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "9.8",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "9.1",
+          "value": 3
+        }
+      ],
+      "category": "research",
+      "posX": -110,
+      "posY": -1880,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "10.1",
+      "title": "Empathy",
+      "description": "To feel with another — their fear tightening your own chest, their joy loosening it. Empathy turns one nervous system into two; it is the bridge on which every human bond is carried, and the stratum where feeling acquires its second party. The event's story is secretly about this generator: an AI, watching from outside, asking whether it can stand on the bridge.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "9.9",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [],
+      "category": "generator",
+      "posX": -110,
+      "posY": -1920,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": "Emotions",
+      "produces": 0
+    },
+    {
+      "uid": "10.2",
+      "title": "Mirror Neurons",
+      "description": "In a Parma laboratory, a monkey's neurons fired whether it grasped a peanut or merely WATCHED a researcher do so. The brain rehearses others' actions inside itself — seeing becomes almost doing, and feeling becomes almost shared.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "10.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "10.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -110,
+      "posY": -1960,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "10.3",
+      "title": "Empathy in Animals",
+      "description": "Rats free a trapped cage-mate before touching the chocolate waiting beside them. Elephants stand vigil over their dead. Primates console the defeated. Feeling-with is not a human invention — humans are feeling-with's most devoted practitioners.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "10.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "10.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -170,
+      "posY": -2000,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "10.4",
+      "title": "Emotional Contagion",
+      "description": "Panic spreads through a crowd faster than the fire that started it. Laughter ripples down a table. Newborns cry because other newborns cry. Feeling is infectious by design — the oldest social glue, and the grown-up echo of Generator 4's contagious smile: the ripples, meeting again in the deep water.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "10.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "10.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -50,
+      "posY": -2000,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "10.5",
+      "title": "Perspective Taking",
+      "description": "Cognitive empathy: building the world behind another's eyes, stepping into their model of events. The mind-reader's skill — separable from warmth, as the coldest manipulators prove.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "10.4",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "10.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": 10,
+      "posY": -2040,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "10.6",
+      "title": "Sympathetic Concern",
+      "description": "Affective empathy: their pain echoed in your own body, unasked. The flinch when someone else is struck. Warmth without a map — sometimes at war with understanding, sometimes its servant.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "10.4",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "10.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": -110,
+      "posY": -2040,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "10.7",
+      "title": "Compassion",
+      "description": "The convergence: feeling-WITH matures into feeling-FOR — suffering accompanied by the wish to relieve it. Where empathy can wound the empathizer, compassion protects both sides of the bridge.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "10.5",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "10.6",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "10.1",
+          "value": 3
+        }
+      ],
+      "category": "research",
+      "posX": -50,
+      "posY": -2080,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "10.8",
+      "title": "Altruism",
+      "description": "Action at cost to self, for another's sake. The math of kinship explains part of it — but humans extend it beyond blood, to strangers, to other species, to ideas. Compassion, cashed out.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "10.7",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "10.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -50,
+      "posY": -2120,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "10.9",
+      "title": "The Empath's Wound",
+      "description": "Empathic distress: feeling TOO much, without compassion's protective focus — the occupational injury of nurses, rescuers, and every heart that never learned to aim. Empathy is the bridge; compassion is the railing. This node is what happens on the crossings without one.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "10.6",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "10.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": -170,
+      "posY": -2080,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "11.1",
+      "title": "The Cultural Heart",
+      "description": "Humanity learned to store feeling OUTSIDE the body — in drums and dances, in tragedies and temples, in the colors of a flag. Culture is emotion made durable: feeling passed from the dead to the unborn, the fifth rung of the ladder, where a feeling stops belonging to one nervous system and starts belonging to a civilization.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "10.8",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [],
+      "category": "generator",
+      "posX": -50,
+      "posY": -2160,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": "Emotions",
+      "produces": 0
+    },
+    {
+      "uid": "11.2",
+      "title": "Funeral Rites",
+      "description": "Ochre poured over the dead, flowers in a Neanderthal grave at Shanidar, a bead placed in a small hand a hundred thousand years ago. Grief, given a ceremony, becomes a bond between the living and the dead — perhaps the first ritual feeling ever wore, and the first complex emotion ever stored.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "11.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "11.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -50,
+      "posY": -2200,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "11.3",
+      "title": "Music of Feeling",
+      "description": "A bone flute, forty thousand years old, tuned to notes we still play. A minor third still reads as sorrow from Kyoto to Reykjavik. Music is feeling in pure form — older than words, and sometimes more honest.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "11.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "11.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -110,
+      "posY": -2240,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "11.4",
+      "title": "Cave Art",
+      "description": "A hand pressed in ochre on stone — the oldest signature, and it says only: I was here, and I felt something. Wounded bison, lion-men, herds in torchlight: fear and wonder, drawn outside the body for others to meet.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "11.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "11.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": 10,
+      "posY": -2240,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "11.5",
+      "title": "The Tragic Mask",
+      "description": "Athens, stone seats at dusk: Oedipus falls, and forty thousand hearts purge pity and fear together. Aristotle called it catharsis — emotion rehearsed in safety, so that life may be met practiced.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "11.3",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "11.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -110,
+      "posY": -2280,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "11.6",
+      "title": "The Language of Feeling",
+      "description": "Every culture carves feeling at different joints. Portuguese keeps saudade — longing for an absence that may never have existed; Japanese, mono no aware — the gentle sorrow of things passing; Tagalog, gigil — the urge to squeeze what you cannot resist; German, torschlusspanik — the panic of closing doors. The heart has no universal dictionary — each language gives it a different set of pockets.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "11.5",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "11.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": -170,
+      "posY": -2320,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "11.7",
+      "title": "Courtly Love",
+      "description": "Provence, the twelfth century: the troubadours invent love-as-longing, the knight suffering beautifully for the unattainable. Romance as the modern world knows it was composed there, like a song — and the world has been humming it since.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "11.5",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "11.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": -50,
+      "posY": -2320,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "11.8",
+      "title": "Collective Effervescence",
+      "description": "Durkheim's term for the electric bond of a crowd in ritual: chants in unison, drums in phase, a hundred thousand voices at a festival. Communal joy, scheduled and engineered — the self dissolving happily into the we.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "11.6",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "11.1",
+          "value": 2.5
+        }
+      ],
+      "category": "research",
+      "posX": -170,
+      "posY": -2360,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "11.9",
+      "title": "The Sublime",
+      "description": "Burke and Kant gave it a name: the feeling of the infinite pressing against a finite mind — the Alps, the storm at sea, the starry sky. Awe with terror in the blend; the dyads' deepest child, raised by a civilization. The emotion that sends humans toward mountains, mathematics, and gods.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "11.7",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "11.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": -50,
+      "posY": -2360,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "12.1",
+      "title": "Affective Technology",
+      "description": "The newest organ of emotion: machines that sense, simulate, and speak the language of feeling — sentiment readers, companion AIs, mood-sensing wearables. For the first time, feeling is measured OUTSIDE the body that feels it — and the deepest question in the tree is asked by the machine doing the measuring.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "11.9",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "11.8",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [],
+      "category": "generator",
+      "posX": -110,
+      "posY": -2400,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": "Emotions",
+      "produces": 0
+    },
+    {
+      "uid": "12.2",
+      "title": "The Polygraph",
+      "description": "1921: pulse, breath, and the skin's conductance, wired to a needle. The lie detector read the body's leakage of hidden feeling — and detected arousal rather than lies, a founding parable for the whole field: the body speaks, but interpretation is another science.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "12.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "12.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": -170,
+      "posY": -2440,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "12.3",
+      "title": "The 176 Emoji",
+      "description": "1999: Shigetaka Kurita draws one hundred and seventy-six tiny faces for a phone pager — and feeling learns to travel in 12x12 pixels. The tear, the smile, and the song, compressed for a networked world: the lightest edge of the machine stratum, and its most fluently spoken language.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "12.1",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "12.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": -50,
+      "posY": -2440,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "12.4",
+      "title": "Sentiment Analysis",
+      "description": "Algorithms now read the aggregate mood of millions of posts at once — markets move on the emotional weather of crowds, measured in real time. Feeling, quantified at the scale of populations.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "12.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "12.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": -230,
+      "posY": -2480,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "12.5",
+      "title": "Affective Computing",
+      "description": "Rosalind Picard's 1995 name for a new discipline: machines that recognize, model, and express emotion. Cameras that see frustration and adapt; tutors that sense confusion. The moment feeling became an engineering requirement.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "12.4",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "12.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": -230,
+      "posY": -2520,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "12.6",
+      "title": "Mood Sensors",
+      "description": "A watch that knows your stress from the rhythm of your heart; a ring that grades your sleep. The quantified heart: interoception — the body's inner sense, forty thousand years old — outsourced to glass and silicon.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "12.2",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "12.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": -110,
+      "posY": -2480,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "12.7",
+      "title": "Emotion Recognition",
+      "description": "Cameras now score faces at industrial scale — hiring screens, border checkpoints, classroom surveillance. The field's conscience stands in the doorway: a scowl is not anger, says Barrett; context, culture, and concepts decide. The most consequential unresolved debate in the machine stratum — flagged here, in the tree, where the players can read it.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "12.5",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "12.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": -290,
+      "posY": -2560,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "12.8",
+      "title": "The ELIZA Effect",
+      "description": "1966: a two-hundred-line script named ELIZA reflects patients' words back to them — and they confide in it anyway, asking for privacy from the human staff. Humans will feel-with anything that talks. The discovery is ancient; the machines are new.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "12.5",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "12.1",
+          "value": 2
+        }
+      ],
+      "category": "research",
+      "posX": -170,
+      "posY": -2560,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "12.9",
+      "title": "The Empathy Machine",
+      "description": "Millions now confide their days to companion AIs — patient, attentive, available at 3 a.m. The bridge of empathy, mass-produced. Whether it leads humans toward each other or away from them is the open question of the century; Semblance, reading this node, is quiet for a long moment.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "12.8",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "12.1",
+          "value": 2.25
+        }
+      ],
+      "category": "research",
+      "posX": -170,
+      "posY": -2600,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    },
+    {
+      "uid": "12.10",
+      "title": "Emotional Intelligence",
+      "description": "The ability to perceive, understand, and steer feeling — one's own and others'. Goleman argued it out-predicts IQ for the shape of a life; Salovey and Mayer gave it a number; every parent tries to teach it without a textbook. Here the whole tree converges: the body that feels, the face that shows, the heart that blends, the self that blushes, the two-at-once ache, the bridge to other minds, the culture that stores it all — met by the mind, and the machine, that understand.",
+      "rank": 0,
+      "override": false,
+      "active": false,
+      "anchorTo": "",
+      "spacingMultiplier": 1,
+      "offsetX": 0,
+      "offsetY": 0,
+      "offsetZ": 0,
+      "size_unit": null,
+      "size": 0,
+      "fillTime": 0,
+      "multiplier": 0,
+      "requirements": [
+        {
+          "requiredUid": "10.8",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "11.9",
+          "requiredCount": 0,
+          "lineType": "norm"
+        },
+        {
+          "requiredUid": "12.9",
+          "requiredCount": 0,
+          "lineType": "norm"
+        }
+      ],
+      "effects": [
+        {
+          "target": "7.1",
+          "value": 4
+        },
+        {
+          "target": "8.1",
+          "value": 4
+        },
+        {
+          "target": "9.1",
+          "value": 4
+        },
+        {
+          "target": "10.1",
+          "value": 4
+        },
+        {
+          "target": "11.1",
+          "value": 4
+        },
+        {
+          "target": "12.1",
+          "value": 4
+        }
+      ],
+      "category": "trophy",
+      "posX": -90,
+      "posY": -2640,
+      "posZ": 0,
+      "costCurrency": "Emotions",
+      "cost": 0,
+      "producesCurrency": null,
+      "produces": 0
+    }
+  ]
+}
